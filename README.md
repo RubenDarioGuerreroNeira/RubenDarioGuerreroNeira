@@ -22,19 +22,3 @@ Contacto
     LinkedIn: https://www.linkedin.com/in/ruben-d-guerrero-n-9276bb195/?lipi=urn%3Ali%3Apage%3Ad_flagship3_feed%3Bo3JmQJgrSeqYZTDr6OyZCQ%3D%3D
     Correo electrónico: rudargeneira@gmail.com
     
-
-
-
-
-- 👋 Hi, I’m @RubenDarioGuerreroNeira
-- 👀 I’m interested in ...
-- 🌱 I’m currently learning ...
-- 💞️ I’m looking to collaborate on ...
-- 📫 How to reach me ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
-
-<!---
-RubenDarioGuerreroNeira/RubenDarioGuerreroNeira is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-You can click the Preview link to take a look at your changes.
---->
