@@ -1,12 +1,5 @@
-Rubén Guerrero
-Sobre mí
-
-¡Hola! Soy un entusiasta de la programación y actualmente estoy cursando el bootcamp fullstack en Soy Henry. Estoy apasionado por aprender nuevas tecnologías y construir proyectos emocionantes. Me encanta colaborar en equipos y compartir conocimientos con otros desarrolladores.
-Educación
-
-    Bootcamp Fullstack en Soy Henry
-    
-Habilidades
+   
+Skills
 
     HTML5, CSS3, JavaScript
     React.js
