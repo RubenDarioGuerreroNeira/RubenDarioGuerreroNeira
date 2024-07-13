@@ -1,4 +1,4 @@
-¡Claro! Aquí te dejo una posible versión del formato que puedes utilizar en tu README, con imágenes y URLs:
+¡Entiendo! Quieres reemplazar la imagen de Less por la de NestJS en la sección de Tools. Aquí te dejo la versión actualizada:
 
 **JavaScript Developer**
 =====================
@@ -24,6 +24,7 @@ Hola! Soy un programador JavaScript apasionado por las últimas tecnologías y t
 
 * ![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=node.js&logoColor=white)
 * ![Express.js](https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express&logoColor=white)
+* ![NestJS](https://img.shields.io/badge/NestJS-E0234E?style=for-the-badge&logo=nestjs&logoColor=white)
 
 ### Databases
 
@@ -35,14 +36,13 @@ Hola! Soy un programador JavaScript apasionado por las últimas tecnologías y t
 * ![Webpack](https://img.shields.io/badge/Webpack-8DD06F?style=for-the-badge&logo=webpack&logoColor=black)
 * ![Rollup](https://img.shields.io/badge/Rollup-EC4A3F?style=for-the-badge&logo=rollup.js&logoColor=white)
 * ![Sass](https://img.shields.io/badge/Sass-CC6699?style=for-the-badge&logo=sass&logoColor=white)
-* ![Less](https://img.shields.io/badge/Less-1D365F?style=for-the-badge&logo=less&logoColor=white)
+* ![NestJS](https://img.shields.io/badge/NestJS-E0234E?style=for-the-badge&logo=nestjs&logoColor=white)
 
 **Skills**
 ---------
 
 * Diseño y desarrollo de aplicaciones web responsivas y accesibles
 * Implementación de patrones de diseño eficientes y escalables
-* Optimización de rendimiento y SEO
 * Integración de APIs y servicios externos
 * Desarrollo de Testing y depuración de código
 
@@ -51,8 +51,13 @@ Hola! Soy un programador JavaScript apasionado por las últimas tecnologías y t
 
 ¿Quieres hablar sobre un proyecto o necesitas ayuda con algo? ¡No dudes en contacto!
 
-[Twitter](https://twitter.com/your_twitter_handle)
-[LinkedIn](https://www.linkedin.com/in/your_linkedin_profile/)
-[Email](mailto:your_email@example.com)
 
-Recuerda reemplazar las imágenes y URLs con tus propias credenciales y información de contacto. ¡Espero que te sea útil!
+[LinkedIn]:https://www.linkedin.com/in/ruben-d-guerrero-n-9276bb195/
+[Email]:rudargeneira@gmail.com
+
+
+
+[LinkedIn]:https://www.linkedin.com/in/ruben-d-guerrero-n-9276bb195/
+[Email]:rudargeneira@gmail.com
+
+
