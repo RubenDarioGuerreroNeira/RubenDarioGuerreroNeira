@@ -46,16 +46,11 @@ Hola! Soy un programador JavaScript apasionado por las últimas tecnologías y t
 
 **Get in Touch**
 ---------------
-
 ¿Quieres hablar sobre un proyecto o necesitas ayuda con algo? ¡No dudes en contacto!
 
-
 [LinkedIn]:https://www.linkedin.com/in/ruben-d-guerrero-n-9276bb195/
 [Email]:rudargeneira@gmail.com
 
 
-
-[LinkedIn]:https://www.linkedin.com/in/ruben-d-guerrero-n-9276bb195/
-[Email]:rudargeneira@gmail.com
 
 
