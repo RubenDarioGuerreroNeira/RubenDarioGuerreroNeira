@@ -34,7 +34,7 @@ Hola! Soy un programador JavaScript apasionado por las últimas tecnologías y t
 * ![Webpack](https://img.shields.io/badge/Webpack-8DD06F?style=for-the-badge&logo=webpack&logoColor=black)
 * ![Rollup](https://img.shields.io/badge/Rollup-EC4A3F?style=for-the-badge&logo=rollup.js&logoColor=white)
 * ![Sass](https://img.shields.io/badge/Sass-CC6699?style=for-the-badge&logo=sass&logoColor=white)
-* ![NestJS](https://img.shields.io/badge/NestJS-E0234E?style=for-the-badge&logo=nestjs&logoColor=white)
+
 
 **Skills**
 ---------
