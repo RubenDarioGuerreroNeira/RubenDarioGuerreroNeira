@@ -1,5 +1,3 @@
-¡Entiendo! Quieres reemplazar la imagen de Less por la de NestJS en la sección de Tools. Aquí te dejo la versión actualizada:
-
 **JavaScript Developer**
 =====================
 
