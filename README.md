@@ -1,11 +1,6 @@
 **JavaScript Developer**
 =====================
 
-**About Me**
-------------
-
-Hola! Soy un programador JavaScript apasionado por las últimas tecnologías y tendencias en el mundo del desarrollo frontend. Me alegra poder ayudarte con cualquier pregunta o proyecto que tengas en mente.
-
 **Tech Stack**
 -------------
 
