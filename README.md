@@ -46,9 +46,8 @@ A web application designed to manage bowling tournaments, allowing users to crea
 - **Custom Rulesets**: Support for different types of tournament rules and formats.
 
 Tech Stack: 
-- **Frontend**: React, Vue.js (for various components)
-- **Backend**: Node.js, Express.js
-- **Database**: MongoDB for storing user and tournament data
+- **Backend**: Node.js, Nestjs
+- **Database**: Postgresql for storing user and tournament data
 
 [🔗 View the Repository](#) | [🎮 Live Demo](#)
 
@@ -62,8 +61,8 @@ An e-commerce shopping cart system built with **NestJS** and **PostgreSQL**. The
 - **Order Processing**: Manage the entire order lifecycle from cart to checkout.
 
 Tech Stack: 
-- **Backend**: NestJS, Express.js
-- **Database**: PostgreSQL
+- **Backend**: Node.js, Nestjs
+- **Database**: Postgresql for storing user and tournament data
 
 [🔗 View the Repository](#) | [🛍️ Live Demo](#)
 
