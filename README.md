@@ -37,11 +37,36 @@ Hey there! 👋 I'm **Ruben D. Guerrero**, a passionate **JavaScript Developer**
 
 ## 🌐 **Projects**
 ---
-Here are some of my notable projects:
-1. **Project Name 1**: Brief description of your project. [View Repository](#)
-2. **Project Name 2**: Brief description of your project. [View Repository](#)
 
-## 📞 **Get in Touch**
+### 🎳 **Bowling Tournament Management System**
+A web application designed to manage bowling tournaments, allowing users to create, organize, and track tournaments easily. Features include:
+- **Team & Player Registration**: Players and teams can sign up for tournaments.
+- **Score Tracking**: Real-time score tracking and leaderboard updates.
+- **Bracket Generation**: Automatic generation of tournament brackets based on participants.
+- **Custom Rulesets**: Support for different types of tournament rules and formats.
+
+Tech Stack: 
+- **Frontend**: React, Vue.js (for various components)
+- **Backend**: Node.js, Express.js
+- **Database**: MongoDB for storing user and tournament data
+
+[🔗 View the Repository](#) | [🎮 Live Demo](#)
+
+---
+
+### 🛒 **Shopping Cart System**
+An e-commerce shopping cart system built with **NestJS** and **PostgreSQL**. The system handles product management, user orders, and cart functionality with real-time updates. Key features include:
+- **Product Management**: CRUD operations for products (create, read, update, delete).
+- **User Authentication**: Secure user sign-in and registration.
+- **Cart Management**: Add, update, and remove items from the shopping cart.
+- **Order Processing**: Manage the entire order lifecycle from cart to checkout.
+
+Tech Stack: 
+- **Backend**: NestJS, Express.js
+- **Database**: PostgreSQL
+
+[🔗 View the Repository](#) | [🛍️ Live Demo](#)
+
 ---
 Feel free to reach out if you want to discuss a project, collaborate on something, or just chat about tech!
 
