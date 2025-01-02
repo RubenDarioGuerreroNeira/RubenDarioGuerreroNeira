@@ -67,7 +67,49 @@ Tech Stack:
 [🔗 View the Repository](#) | [🛍️ Live Demo](#)
 
 ---
-Feel free to reach out if you want to discuss a project, collaborate on something, or just chat about tech!
+### Amusement Park API
+A RESTful API developed with NestJS and PostgreSQL to manage the operations and functionalities of an amusement park. This system centralizes the management of customers, employees, attractions, tickets, and promotions.
+
+Implemented Functionalities
+Customers
+Registration of customers to the system after their first visit to the park.
+Required basic information: name, ID, phone, email, height, and age.
+Minors must associate contact information of a family member.
+Restriction on sending promotions or advertisements to minors.
+
+Employees
+Management of 5 types of employees:
+Administrative: management of stations and attractions.
+Logistics: ticket delivery at stations.
+Advertising: analysis of frequent customers for promotions.
+Operators: height and ticket verification for attraction entry.
+Maintenance: updating the status of attractions.
+Registration of personal information and work schedules.
+
+Tickets and Stations
+Purchase of tickets at 5 stations within the park.
+Enabling stations based on occupancy percentage, managed by administrative employees.
+
+Attractions
+Registration of attractions with description, classification, and usage conditions.
+Verification of height and functional status of the attraction before entry.
+Notification to operators if the customer does not meet the required height.
+Assigned personnel to the attraction.
+Verification of attraction availability based on height and work schedules.
+Verification of the attraction's status: Available or Not Available (Damage or Maintenance).
+
+Statistics and Promotions
+Calculation of the current occupancy of the park.
+Identification of the most and least visited attractions.
+Analysis of frequent customers to offer personalized promotions (e.g., discounts for recurring visits).
+
+Technologies Used
+Framework: NestJS
+Database: PostgreSQL
+ORM: TypeORM
+Language: TypeScript
+
+
 
 - [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/ruben-d-guerrero-n-9276bb195/)
 - [![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:rudargeneira@gmail.com)
