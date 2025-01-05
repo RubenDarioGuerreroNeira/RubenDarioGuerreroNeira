@@ -38,6 +38,54 @@ Hey there! 👋 I'm **Ruben D. Guerrero**, a passionate **JavaScript Developer**
 ## 🌐 **Projects**
 ---
 
+### Medical Appointment API Features:
+User Management (Patients, Doctors, Administrators):
+
+The API allows registration, authentication, and management of users with different roles (patient, doctor, administrator).
+A role-based system controls permissions and access to different functionalities.
+Appointment Creation and Management:
+
+Patients can request appointments with specific doctors, selecting date and time based on doctor availability.
+Appointment status (confirmed, canceled, completed) is managed through an enum system, enabling precise tracking of the appointment flow.
+Medical History Management:
+
+Each patient's medical history is recorded, including descriptions, diagnoses, treatments, and complex medical data in JSONB format for easy searching and analysis.
+The API provides endpoints for creating, reading, updating, and deleting entries in the medical history.
+It correctly relates entries to the corresponding patient and associated doctor.
+Prescription Management:
+
+Integrates with prescription management, including medication lists, indications, and issuance date.
+Allows associating prescriptions with specific appointments.
+Includes the possibility of storing the URL of a prescription file.
+Medical Note Registration:
+
+Facilitates the creation and management of medical notes associated with appointments.
+Offers the option to mark notes as private to control access to sensitive information.
+Consultation Document Storage:
+
+Allows uploading and managing documents related to consultations, including file name, document type, file URL, and upload date.
+These documents are associated with specific appointments.
+Doctor's Schedule Management:
+
+Doctor availability schedules are managed using JSONB format to represent the complexity of schedules.
+This enables efficient searching for availability and appointment scheduling.
+Technologies and Tools:
+
+NestJS: Node.js framework for building scalable and maintainable applications.
+TypeORM: ORM for interacting with the database, simplifying entity and relationship management.
+PostgreSQL: Robust relational database for storing information.
+JSONB: Format for storing complex data and performing efficient searches.
+UUID: Utilization of UUIDs as unique identifiers for entities.
+Focus on Efficiency and Scalability:
+
+The API design prioritizes efficiency in data handling, especially for managing medical histories, schedules, and complex medical data.
+The use of JSONB allows for optimized searches and queries.
+The NestJS architecture and code modularity promote scalability and long-term maintainability.
+
+
+
+---
+
 ### 🎳 **Bowling Tournament Management System** (2024)
 A web application designed to manage bowling tournaments, allowing users to create, organize, and track tournaments easily. Features include:
 - **Team & Player Registration**: Players and teams can sign up for tournaments.
