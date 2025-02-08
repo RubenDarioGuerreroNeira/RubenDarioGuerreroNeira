@@ -55,13 +55,36 @@ Doctor availability schedules are managed using JSONB format to represent the co
 This enables efficient searching for availability and appointment scheduling.
 Technologies and Tools:
 
-Telegram Bot Integration:
+Telegram Bot for Medical Assistance
+This Telegram bot is designed to provide users with quick and easy access to medical assistance. It integrates three key features:
 
-The API has an integrated Telegram bot called "Cita Médica." The active functionalities of this bot include:
+GPS-Based Medical Center Locator:
 
-Finding the nearest hospital center from your location.
-Answering any questions about symptoms or medications, with responses provided by the AI.
-Upcoming features include scheduling medical appointments, displaying specialists, and showing clinic hours.
+Using your device's GPS, the bot identifies your current location.
+It then searches for the nearest medical centers, such as hospitals, clinics, and pharmacies.
+The bot provides a list of nearby options, including addresses and contact information.
+AI-Powered Symptom Checker and Medical Information:
+
+You can describe your symptoms or ask medical-related questions in natural language.
+The bot uses an integrated AI to understand your queries and provide relevant information.
+It can offer potential diagnoses, suggest home remedies, or advise seeking professional medical help.
+Appointment Scheduling via RESTful API:
+
+The bot connects to a RESTful API that manages medical appointment scheduling.
+You can view available time slots at nearby medical centers.
+You can book, reschedule, or cancel appointments directly through the bot.
+Benefits
+Convenience: Access medical assistance and schedule appointments from anywhere using your Telegram app.
+Speed: Quickly find nearby medical centers and get answers to your medical questions.
+Accuracy: Benefit from an AI-powered symptom checker that provides reliable information.
+Efficiency: Streamline the process of finding medical care and scheduling appointments.
+How to Use
+Add the bot to your Telegram contacts.
+Use commands or natural language to interact with the bot.
+Allow the bot to access your location for the medical center locator feature.
+Additional Notes
+The bot is continuously updated with the latest medical information and improved AI capabilities.
+User privacy is a priority; location data is only used to find nearby medical centers and is not stored long-term.
 
 NestJS: Node.js framework for building scalable and maintainable applications.
 TypeORM: ORM for interacting with the database, simplifying entity and relationship management.
