@@ -55,6 +55,14 @@ Doctor availability schedules are managed using JSONB format to represent the co
 This enables efficient searching for availability and appointment scheduling.
 Technologies and Tools:
 
+Telegram Bot Integration:
+
+The API has an integrated Telegram bot called "Cita Médica." The active functionalities of this bot include:
+
+Finding the nearest hospital center from your location.
+Answering any questions about symptoms or medications, with responses provided by the AI.
+Upcoming features include scheduling medical appointments, displaying specialists, and showing clinic hours.
+
 NestJS: Node.js framework for building scalable and maintainable applications.
 TypeORM: ORM for interacting with the database, simplifying entity and relationship management.
 PostgreSQL: Robust relational database for storing information.
