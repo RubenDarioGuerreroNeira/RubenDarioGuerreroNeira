@@ -1,17 +1,55 @@
-# 👋 ¡Hola! Soy Ruben D. Guerrero
-
-Soy desarrollador de software enfocado en el ecosistema JavaScript, comprometido con la creación de aplicaciones web modernas, robustas y escalables. Me apasiona la excelencia técnica y la innovación, priorizo la calidad del código y estoy en constante búsqueda de nuevos retos que me impulsen a crecer profesionalmente. ¡Gracias por visitar mi espacio en GitHub!
+<h1 align="center">Hola 👋, soy Rubén Darío Guerrero Neira</h1>
+<h3 align="center">Desarrollador Backend apasionado por NestJS, PostgreSQL y las buenas prácticas 👨‍💻</h3>
 
 ---
 
 ## 💡 Sobre mí
 
-- 🎯 Especialista en desarrollo web full stack con tecnologías actuales.
-- 🧩 Defensor de la arquitectura limpia, el código sostenible y la automatización eficiente.
-- 🤝 Disfruto colaborar, aportar soluciones creativas y aprender de la comunidad.
-- 📚 Curioso incansable y promotor del aprendizaje continuo.
+- 🔭 Actualmente contribuyo a [Vendure](https://github.com/vendure-ecommerce/vendure), el framework de e-commerce headless en NestJS
+- 🌱 Aprendiendo constantemente y metido en el mundo Open Source
+- 💬 Me encanta hablar sobre arquitectura escalable, diseño limpio y sistemas distribuidos
+- 📫 Contacto: **rubendarioguerreroneira@gmail.com**
+- ⚡ Fun fact: A veces sueño en GraphQL...
 
 ---
+
+---
+
+## 🚀 Contribuciones destacadas en Open Source
+
+### 🛍️ Vendure – Framework de E-Commerce basado en NestJS
+
+Contribuí al core del proyecto con mejoras técnicas como:
+
+- [`fix(testing): Make e2e test output directory configurable`]([https://github.com/vendure-ecommerce/vendure/pull/XXXX](https://github.com/vendure-ecommerce/vendure/pull/3723))
+- [`fix(core): Prevent circular ref on ShippingMethod serialization`](https://github.com/vendure-ecommerce/vendure/pull/3736)
+- [`fix(core): Make payment state transitions idempotent`](https://github.com/vendure-ecommerce/vendure/pull/3734)
+- [`feat(core): Add @Override() decorator`](https://github.com/vendure-ecommerce/vendure/pull/3739)
+
+💬 Estas contribuciones recibieron múltiples revisiones por parte de los maintainers y aportan valor real al ecosistema.
+
+---
+
+## 📊 GitHub Stats
+
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=RubenDarioGuerreroNeira&show_icons=true&theme=tokyonight" alt="GitHub stats" />
+</p>
+
+<p align="center">
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=RubenDarioGuerreroNeira&theme=tokyonight" alt="GitHub streak" />
+</p>
+
+---
+
+## ✨ Frase de cabecera
+
+> “Escribir código es fácil. Escribir código limpio, mantenible y escalable... esa es la verdadera aventura.”
+
+---
+
+
+
 
 ## 🚀 Tech Stack y Herramientas
 
