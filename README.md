@@ -28,19 +28,6 @@ Contribuí al core del proyecto con mejoras técnicas como:
 
 💬 Estas contribuciones recibieron múltiples revisiones por parte de los maintainers y aportan valor real al ecosistema.
 
----
-
-## 📊 GitHub Stats
-
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=RubenDarioGuerreroNeira&show_icons=true&theme=tokyonight" alt="GitHub stats" />
-</p>
-
-<p align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=RubenDarioGuerreroNeira&theme=tokyonight" alt="GitHub streak" />
-</p>
-
----
 
 ## ✨ Frase de cabecera
 
