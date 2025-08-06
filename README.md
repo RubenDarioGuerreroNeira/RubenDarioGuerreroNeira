@@ -8,7 +8,7 @@
 - 🔭 Actualmente contribuyo a [Vendure](https://github.com/vendure-ecommerce/vendure), el framework de e-commerce headless en NestJS
 - 🌱 Aprendiendo constantemente y metido en el mundo Open Source
 - 💬 Me encanta hablar sobre arquitectura escalable, diseño limpio y sistemas distribuidos
-- 📫 Contacto: **rubendarioguerreroneira@gmail.com**
+- 📫 Contacto: **rudargeneira@gmail.com**
 - ⚡ Fun fact: A veces sueño en GraphQL...
 
 ---
