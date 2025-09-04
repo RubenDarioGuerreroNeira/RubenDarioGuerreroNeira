@@ -1,4 +1,4 @@
-(./github-header-banner(1).png)
+github-header-banner(1).png
 <h3 align="center">Desarrollador Backend apasionado por NestJS, PostgreSQL y las buenas prácticas 👨‍💻</h3>
 
 ---
