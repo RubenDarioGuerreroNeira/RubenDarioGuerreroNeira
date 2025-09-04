@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="github-header-banner.png" alt="GitHub Header Banner" />
+  <img src="github-header-banner(1).png" alt="GitHub Header Banner" />
 </p>
 <h3 align="center">Desarrollador Backend apasionado por NestJS, PostgreSQL y las buenas prácticas 👨‍💻</h3>
 
