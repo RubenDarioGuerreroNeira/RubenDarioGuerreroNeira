@@ -1,6 +1,6 @@
 <h1 align="center"><strong>🚀 Rubén D. Guerrero N.</strong></h1>
 
-<p align="center">
+<p align="right">
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original-wordmark.svg" alt="Git Logo" width="60"/>
 </p>
 
