@@ -1,5 +1,5 @@
 <h1 align="center"><strong>🚀 Rubén D. Guerrero N.</strong></h1>
-<h3 align="center"><b>Backend Developer</b></h3>
+<h3 align="center">Backend Developer</h3>
 
 ## 💡 Sobre mí
 
