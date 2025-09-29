@@ -1,9 +1,10 @@
-# 🚀 **Rubén D. Guerrero N.**
+<h1 align="center"><strong>🚀 Rubén D. Guerrero N.</strong></h1>
 
-<div align="center">
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original-wordmark.svg" alt="Git Logo" width="50"/>
-</div>
+<p align="center">
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original-wordmark.svg" alt="Git Logo" width="60"/>
+</p>
 
+<h3 align="center"><b>Backend Developer</b></h3>
 ### <div align="center"><b>Backend Developer</b></div>
 ## 💡 Sobre mí
 
