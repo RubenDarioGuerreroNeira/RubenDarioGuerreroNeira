@@ -5,7 +5,7 @@
 </p>
 
 <h3 align="center"><b>Backend Developer</b></h3>
-### <div align="center"><b>Backend Developer</b></div>
+
 ## 💡 Sobre mí
 
 - 🔭 Actualmente contribuyo a [Vendure](https://github.com/vendure-ecommerce/vendure), el framework de e-commerce headless en NestJS
