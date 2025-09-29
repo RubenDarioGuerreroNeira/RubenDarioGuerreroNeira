@@ -1,16 +1,10 @@
-# <div align="center">Rubén D. Guerrero N.</div>
+# 🚀 **Rubén D. Guerrero N.**
 
 <div align="center">
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original-wordmark.svg" alt="Git Logo" width="60"/>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original-wordmark.svg" alt="Git Logo" width="50"/>
 </div>
 
-<div align="center">
-  <b>Backend Developer</b>
-</div>
-<h3 align="center">Desarrollador Backend apasionado por NestJS, PostgreSQL y las buenas prácticas 👨‍💻</h3>
-
----
-
+### <div align="center"><b>Backend Developer</b></div>
 ## 💡 Sobre mí
 
 - 🔭 Actualmente contribuyo a [Vendure](https://github.com/vendure-ecommerce/vendure), el framework de e-commerce headless en NestJS
