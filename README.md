@@ -1,6 +1,12 @@
-<p align="center">
-  <img src="github-header-banner (1).png" alt="GitHub Header Banner" />
-</p>
+# <div align="center">Rubén D. Guerrero N.</div>
+
+<div align="center">
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original-wordmark.svg" alt="Git Logo" width="60"/>
+</div>
+
+<div align="center">
+  <b>Backend Developer</b>
+</div>
 <h3 align="center">Desarrollador Backend apasionado por NestJS, PostgreSQL y las buenas prácticas 👨‍💻</h3>
 
 ---
