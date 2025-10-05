@@ -11,15 +11,13 @@
 
 ---
 
----
-
 ## 🚀 Contribuciones destacadas en Open Source
 
 ### 🛍️ Vendure – Framework de E-Commerce basado en NestJS
 
 Contribuí al core del proyecto con mejoras técnicas como:
 
-- [`fix(testing): Make e2e test output directory configurable`]([https://github.com/vendure-ecommerce/vendure/pull/XXXX](https://github.com/vendure-ecommerce/vendure/pull/3723))
+- [`fix(testing): Make e2e test output directory configurable`](https://github.com/vendure-ecommerce/vendure/pull/3723)
 - [`fix(core): Prevent circular ref on ShippingMethod serialization`](https://github.com/vendure-ecommerce/vendure/pull/3736)
 - [`fix(core): Make payment state transitions idempotent`](https://github.com/vendure-ecommerce/vendure/pull/3734)
 - [`feat(core): Add @Override() decorator`](https://github.com/vendure-ecommerce/vendure/pull/3739)
@@ -32,9 +30,6 @@ Contribuí al core del proyecto con mejoras técnicas como:
 > “Escribir código es fácil. Escribir código limpio, mantenible y escalable... esa es la verdadera aventura.”
 
 ---
-
-
-
 
 ## 🚀 Tech Stack y Herramientas
 
@@ -85,6 +80,27 @@ Contribuí al core del proyecto con mejoras técnicas como:
 
 ---
 
+### 🌱 Sustainable Credits Indexer
+
+Desarrollé el **Sustainable Credits Indexer**, un robusto servicio de backend diseñado para actuar como un puente de datos de alto rendimiento entre la blockchain y las aplicaciones de usuario final. El sistema se especializa en la indexación *off-chain* de eventos de contratos inteligentes **ERC-1155** que representan **Activos del Mundo Real (RWA)**, como créditos de carbono, biodiversidad o reciclaje.
+
+El objetivo principal es **optimizar el acceso a los datos de la blockchain**, eliminando la necesidad de consultas directas (lentas y costosas). El servicio procesa eventos en tiempo real, los persiste en una base de datos relacional y los expone mediante una **API RESTful eficiente**.
+
+#### Funcionalidades Clave y Responsabilidades
+
+- **Indexación en Tiempo Real**: Conexión a un nodo RPC (Ethereum/Polygon) vía WebSockets para escuchar eventos `TransferSingle` de ERC-1155 al instante.
+- **Lógica de Negocio Integral**: Interpretación precisa de eventos para diferenciar operaciones de **Mint**, **Transfer** y **Burn**, validando saldos y garantizando resiliencia.
+- **Configuración Dinámica sin Interrupciones**: Descubrimiento automático de nuevos contratos mediante consultas periódicas a la base de datos, permitiendo añadir activos sin reiniciar el servicio.
+- **API RESTful para Gestión y Consulta**:
+  - `POST /proyectos`: Registra nuevos proyectos de sostenibilidad (contrato + ABI).
+  - `GET /proyectos/wallet/:address`: Consulta instantánea de saldos tokenizados de una billetera.
+- **Integridad de Datos**: Operaciones atómicas mediante transacciones para garantizar consistencia en escrituras complejas.
+
+**Stack Tecnológico:**  
+NestJS, TypeScript (96.5%), PostgreSQL (con Docker), TypeORM, Ethers.js, Git/GitHub.
+
+---
+
 ### 🎳 Bowling Tournament Management System (2024)
 
 Plataforma web para organizar torneos de bolos: registro de equipos y jugadores, seguimiento en tiempo real, generación de brackets y reglas personalizadas.
@@ -131,7 +147,3 @@ API RESTful para la gestión de parques de diversiones, clientes, empleados, atr
 
 Siempre estoy abierto a nuevos desafíos, proyectos colaborativos y oportunidades profesionales.  
 ¡Contáctame y creemos algo extraordinario juntos!
-
-<!--
-Proudly created with Copilot & GPRM (https://gprm.itsvg.in)
--->
