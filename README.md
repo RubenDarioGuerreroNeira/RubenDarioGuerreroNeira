@@ -82,21 +82,28 @@ Contribuí al core del proyecto con mejoras técnicas como:
 
 ### 🌱 Sustainable Credits Indexer
 
-Desarrollé el **Sustainable Credits Indexer**, un robusto servicio de backend diseñado para actuar como un puente de datos de alto rendimiento entre la blockchain y las aplicaciones de usuario final. El sistema se especializa en la indexación *off-chain* de eventos de contratos inteligentes **ERC-1155** que representan **Activos del Mundo Real (RWA)**, como créditos de carbono, biodiversidad o reciclaje.
+Desarrollé el **Sustainable Credits Indexer**, un robusto servicio de backend que actúa como puente de datos entre la blockchain y aplicaciones convencionales. Indexa *off-chain* eventos de contratos inteligentes **ERC-1155** que representan **Activos del Mundo Real (RWA)** —como créditos de carbono, biodiversidad o reciclaje— para ofrecer acceso rápido, seguro y eficiente a estos datos.
 
-El objetivo principal es **optimizar el acceso a los datos de la blockchain**, eliminando la necesidad de consultas directas (lentas y costosas). El servicio procesa eventos en tiempo real, los persiste en una base de datos relacional y los expone mediante una **API RESTful eficiente**.
+#### 🔍 Uso y Alcance para la Sociedad
 
-#### Funcionalidades Clave y Responsabilidades
+- **Para Empresas y Organizaciones**:  
+  Permite gestionar y consultar saldos de créditos de sostenibilidad de forma instantánea mediante apps web/móvil, sin interactuar directamente con la blockchain (lento y costoso). Ideal para entidades en mercados de carbono, reforestación o reciclaje.
 
-- **Indexación en Tiempo Real**: Conexión a un nodo RPC (Ethereum/Polygon) vía WebSockets para escuchar eventos `TransferSingle` de ERC-1155 al instante.
-- **Lógica de Negocio Integral**: Interpretación precisa de eventos para diferenciar operaciones de **Mint**, **Transfer** y **Burn**, validando saldos y garantizando resiliencia.
-- **Configuración Dinámica sin Interrupciones**: Descubrimiento automático de nuevos contratos mediante consultas periódicas a la base de datos, permitiendo añadir activos sin reiniciar el servicio.
-- **API RESTful para Gestión y Consulta**:
-  - `POST /proyectos`: Registra nuevos proyectos de sostenibilidad (contrato + ABI).
-  - `GET /proyectos/wallet/:address`: Consulta instantánea de saldos tokenizados de una billetera.
-- **Integridad de Datos**: Operaciones atómicas mediante transacciones para garantizar consistencia en escrituras complejas.
+- **Para Desarrolladores y Nuevos Mercados**:  
+  Ofrece una **API RESTful simple** para construir mercados verdes, portafolios de inversión o dashboards ambientales sin necesidad de experiencia en blockchain, fomentando la innovación en la economía verde.
 
-**Stack Tecnológico:**  
+- **Para Reguladores y Auditores**:  
+  Proporciona una fuente de datos centralizada, íntegra y en tiempo real que refleja fielmente la blockchain, facilitando auditorías y verificación de propiedad (con posibilidad de anclar documentación a IPFS).
+
+#### 🌟 Beneficios Clave
+
+- **Eficiencia radical**: Consultas instantáneas gracias al indexado en PostgreSQL (vs. llamadas lentas a la blockchain).
+- **Integridad garantizada**: Operaciones atómicas y lógica precisa para Mint/Transfer/Burn, evitando inconsistencias.
+- **Escalabilidad dinámica**: Nuevos proyectos se registran vía `POST /proyectos` y son descubiertos automáticamente sin reiniciar el servicio.
+- **Democratización Web3**: Desarrolladores Web2 pueden construir sobre infraestructura blockchain sin curva de aprendizaje pronunciada.
+
+#### 🛠️ Stack Tecnológico
+
 NestJS, TypeScript (96.5%), PostgreSQL (con Docker), TypeORM, Ethers.js, Git/GitHub.
 
 ---
@@ -147,3 +154,7 @@ API RESTful para la gestión de parques de diversiones, clientes, empleados, atr
 
 Siempre estoy abierto a nuevos desafíos, proyectos colaborativos y oportunidades profesionales.  
 ¡Contáctame y creemos algo extraordinario juntos!
+
+<!--
+Proudly created with Copilot & GPRM (https://gprm.itsvg.in)
+-->
