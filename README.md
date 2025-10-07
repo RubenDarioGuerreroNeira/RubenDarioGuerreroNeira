@@ -106,6 +106,43 @@ Desarrollé el **Sustainable Credits Indexer**, un robusto servicio de backend q
 
 NestJS, TypeScript (96.5%), PostgreSQL (con Docker), TypeORM, Ethers.js, Git/GitHub.
 
+
+```mermaid
+sequenceDiagram
+    participant Admin as Administrador
+    participant API_Principal as API REST (Backend)
+    participant DB[PostgreSQL Database]
+    participant Indexer [Listener Service]
+    participant Blockchain
+
+    Note over Indexer: Al iniciar, el Indexer carga todos los proyectos existentes desde la BD.
+    Indexer->>+DB: GET /proyectos
+    DB-->>-Indexer: Lista de proyectos existentes
+    Indexer->>Blockchain: Se suscribe a eventos de contratos existentes
+
+    Admin->>+API_Principal: POST /proyectos (Registra un nuevo proyecto)
+    API_Principal->>+DB: Guarda el nuevo proyecto
+    DB-->>-API_Principal: Confirmación
+    API_Principal-->>Indexer: Emite evento 'proyecto.creado'
+    API_Principal-->>-Admin: 201 Created
+    Indexer->>Blockchain: Se suscribe al nuevo contrato ¡al instante!
+
+    Blockchain-->>Indexer: Emite evento (Acuñación, Transferencia o Quema)
+    Indexer->>+DB: Procesa el evento y actualiza saldos (transacción atómica)
+    DB-->>-Indexer: Confirmación
+
+    Client->>+API_Principal: GET /proyectos/wallet/{address}
+    API_Principal->>+DB: Consulta saldos de la wallet
+    DB-->>-API_Principal: Devuelve tokens y cantidades
+    API_Principal-->>-Client: 200 OK con datos indexados
+```
+
+
+
+
+
+
+
 ---
 
 ### 🎳 Bowling Tournament Management System (2024)
