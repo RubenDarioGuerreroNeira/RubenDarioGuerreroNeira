@@ -57,9 +57,8 @@ Contribuí al core del proyecto con mejoras técnicas como:
 
 ---
 
-## 🏆 Proyectos Destacados
+# 🏆 Proyectos Destacados
 
-<img src="/src/images/Clinica C.jpg" width="320" alt="Medical Logo" />
 
 # Medical Appointments API
 
