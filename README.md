@@ -60,7 +60,7 @@ Contribuí al core del proyecto con mejoras técnicas como:
 # 🏆 Proyectos Destacados
 
 
-# Medical Appointments API
+## Medical Appointments API
 
 ## Descripción
 
@@ -211,10 +211,10 @@ El bot de Telegram [@CitasMedicbot](https://t.me/CitasMedicbot) complementa nues
 ---
 
 
-<div align="center">
->
-  <h1>Bot Taurino para Telegram con NestJS y Gemini</h1>
-</div>
+
+
+## Bot Taurino para Telegram con NestJS y Gemini
+
 
 Este proyecto es un bot de Telegram inteligente, desarrollado con **NestJS**, que actúa como un asistente virtual para aficionados a la tauromaquia. El bot es capaz de comprender el lenguaje natural gracias a la **API de Gemini** y extrae información actualizada sobre los próximos festejos televisados mediante web scraping del portal **"El Muletazo"**.
 
