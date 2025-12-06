@@ -4,262 +4,88 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Github Profile</title>
+    <title>Rubén D. Guerrero N. - Backend Developer</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <style>
-        body {
-            font-family: 'Roboto', sans-serif;
-            background: linear-gradient(270deg, #5fc7ff, #0383a6);
-            background-size: 600% 600%;
-            animation: gradient 15s ease infinite;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-        }
-
-        @keyframes gradient {
-            0% {
-                background-position: 0% 50%;
-            }
-
-            50% {
-                background-position: 100% 50%;
-            }
-
-            100% {
-                background-position: 0% 50%;
-            }
-        }
-
-        .loader {
-            border: 16px solid #f3f3f3;
-            border-top: 16px solid #3498db;
-            border-radius: 50%;
-            width: 50px;
-            height: 50px;
-            animation: spin 2s linear infinite;
-            position: fixed;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            z-index: 1000;
-        }
-
-        @keyframes spin {
-            0% {
-                transform: rotate(0deg);
-            }
-
-            100% {
-                transform: rotate(360deg);
-            }
-        }
-
-        body.loaded .loader {
-            display: none;
-        }
-
-        .container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .profile-card {
-            background-color: #fff;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            overflow: hidden;
-            width: 350px;
-            text-align: center;
-            transition: transform 0.3s ease;
-            animation: fadeIn 1s ease-out forwards;
-        }
-
-        @keyframes fadeIn {
-            from {
-                opacity: 0;
-                transform: translateY(20px);
-            }
-
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        .profile-card:hover {
-            transform: scale(1.05);
-        }
-
-        .profile-header {
-            background-color: #24292e;
-            color: #fff;
-            padding: 20px;
-        }
-
-        .avatar {
-            width: 100px;
-            height: 100px;
-            border-radius: 50%;
-            margin-bottom: 10px;
-            filter: grayscale(100%);
-        }
-
-        .avatar:hover {
-            filter: grayscale(0%);
-            transition: filter 0.3s ease;
-        }
-
-        /* .username {
-            font-size: 24px;
-            margin: 0;
-            animation: blink 2s infinite;
-        } */
-
-        .username {
-            font-size: 24px;
-            margin: 0;
-            position: relative;
-            display: inline-block;
-            background: linear-gradient(90deg, #fff, #64b5f6, #fff);
-            background-size: 200% auto;
-            background-clip: text;
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            animation: shine 3s linear infinite;
-        }
-
-        .username::after {
-            content: '';
-            position: absolute;
-            left: 0;
-            bottom: -2px;
-            width: 100%;
-            height: 2px;
-            background: #64b5f6;
-            transform: scaleX(0);
-            transform-origin: left;
-            animation: underline 3s ease-in-out infinite;
-        }
-
-        @keyframes shine {
-            to {
-                background-position: 200% center;
-            }
-        }
-
-        @keyframes underline {
-            0% {
-                transform: scaleX(0);
-                opacity: 0;
-            }
-
-            20% {
-                transform: scaleX(1);
-                opacity: 1;
-            }
-
-            80% {
-                transform: scaleX(1);
-                opacity: 1;
-            }
-
-            100% {
-                transform: scaleX(0);
-                opacity: 0;
-            }
-        }
-
-        /*-----------------------------------------------------------------------------------------------*/
-
-
-        @keyframes blink {
-
-            0%,
-            100% {
-                opacity: 1;
-            }
-
-            50% {
-                opacity: 0;
-            }
-        }
-
-        .profile-body {
-            padding: 20px;
-            font-size: 14px;
-            line-height: 1.6;
-        }
-
-        .profile-footer {
-            padding: 20px;
-        }
-
-        .btn {
-            display: inline-block;
-            padding: 10px 20px;
-            background-color: #24292e;
-            color: #fff;
-            border: none;
-            border-radius: 5px;
-            text-decoration: none;
-            font-size: 14px;
-            transition: background-color 0.3s ease;
-        }
-
-        .btn:hover {
-            background-color: #0078d7;
-        }
-
-        .github-btn i {
-            animation: rotate 5s linear infinite;
-        }
-
-        @keyframes rotate {
-            from {
-                transform: rotate(0deg);
-            }
-
-            to {
-                transform: rotate(360deg);
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    <div class="loader"></div>
-    <div class="container">
-        <div class="profile-card">
-            <div class="profile-header">
-                <img src="https://avatars.githubusercontent.com/u/149652185?v=4" alt="Mi Avatar" class="avatar">
-                <h1 class="username">RubenDarioGuerreroNeira</h1>
-            </div>
-            <div class="profile-body">
-                <h2>About Me</h2>
-                <p>I'm Rubén D. Guerrero, a passionate JavaScript Developer Backend, who loves building sleek,
-                    responsive web
-                    applications with the latest technologies. I thrive on solving complex problems, writing clean code,
-                    and continuously learning. Welcome to my GitHub!
-                </p>
-            </div>
-            <div class="profile-footer">
-                <a href="https://github.com/RubenDarioGuerreroNeira" target="_blank" class="btn github-btn">
-                    <i class="fab fa-github"></i> Ver mi GitHub
-                </a>
+    <div class="loader">
+        <div class="spinner"></div>
+    </div>
+
+    <header class="hero">
+        <div class="hero-content">
+            <img src="https://avatars.githubusercontent.com/u/149652185?v=4" alt="Mi Avatar" class="avatar">
+            <h1 class="username">Rubén D. Guerrero N.</h1>
+            <p class="subtitle">Backend Developer</p>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/ruben-d-guerrero-n-9276bb195/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/RubenDarioGuerreroNeira" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                <a href="mailto:rudargeneira@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
             </div>
         </div>
-    </div>
-    <script>
-        window.onload = function () {
-            document.body.classList.add("loaded");
-        };
-    </script>
+    </header>
+
+    <main class="container">
+        <section id="about" class="card">
+            <h2><i class="fas fa-user"></i> Sobre mí</h2>
+            <p>
+                Desarrollador apasionado por la arquitectura escalable, el diseño limpio y los sistemas distribuidos.
+                Actualmente contribuyo activamente a proyectos Open Source como <a href="https://github.com/vendure-ecommerce/vendure" target="_blank">Vendure</a>,
+                un framework de e-commerce headless en NestJS, donde he aportado mejoras al core. Mi enfoque es escribir código limpio, mantenible y escalable.
+            </p>
+        </section>
+
+        <section id="tech-stack" class="card">
+            <h2><i class="fas fa-cogs"></i> Tech Stack y Herramientas</h2>
+            <div class="tech-icons">
+                <img src="https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E" alt="JavaScript">
+                <img src="https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript">
+                <img src="https://img.shields.io/badge/nestjs-%23E0234E.svg?style=for-the-badge&logo=nestjs&logoColor=white" alt="NestJS">
+                <img src="https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white" alt="Node.js">
+                <img src="https://img.shields.io/badge/postgres-%23316192.svg?style=for-the-badge&logo=postgresql&logoColor=white" alt="PostgreSQL">
+                <img src="https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=white" alt="MongoDB">
+                <img src="https://img.shields.io/badge/-GraphQL-E10098?style=for-the-badge&logo=graphql&logoColor=white" alt="GraphQL">
+                <img src="https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white" alt="Git">
+                <img src="https://img.shields.io/badge/github%20actions-%232671E5.svg?style=for-the-badge&logo=githubactions&logoColor=white" alt="GitHub Actions">
+                <img src="https://img.shields.io/badge/-Docker-333?style=for-the-badge&logo=docker" alt="Docker">
+            </div>
+        </section>
+
+        <section id="projects" class="card">
+            <h2><i class="fas fa-rocket"></i> Proyectos Destacados</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <h3>Sustainable Credits Indexer</h3>
+                    <p>Servicio de backend que indexa off-chain eventos de contratos ERC-1155 (Activos del Mundo Real como créditos de carbono) para ofrecer acceso rápido y seguro a los datos mediante una API RESTful.</p>
+                    <div class="project-tags"><span>NestJS</span><span>PostgreSQL</span><span>Ethers.js</span><span>Blockchain</span></div>
+                </div>
+                 <div class="project-card">
+                    <h3>Bot Taurino para Telegram</h3>
+                    <p>Asistente virtual con NestJS y Gemini API que informa sobre festejos taurinos televisados y calendarios de temporada mediante web scraping, entendiendo lenguaje natural.</p>
+                    <div class="project-tags"><span>NestJS</span><span>Gemini API</span><span>Web Scraping</span><span>Telegraf</span></div>
+                </div>
+                <div class="project-card">
+                    <h3>Medical Appointments API</h3>
+                    <p>API con NestJS para la gestión completa de citas médicas, pacientes, médicos e historiales clínicos, con autenticación JWT y almacenamiento en Cloudinary.</p>
+                    <div class="project-tags"><span>NestJS</span><span>PostgreSQL</span><span>TypeORM</span><span>JWT</span></div>
+                </div>
+                <div class="project-card">
+                    <h3>Bot de Telegram para Citas Médicas</h3>
+                    <p>Bot conversacional que permite a los pacientes buscar farmacias, consultar historiales, gestionar recordatorios y más, conectado a la Medical Appointments API.</p>
+                    <div class="project-tags"><span>Telegram</span><span>Node.js</span><span>IA</span><span>Geolocalización</span></div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2025 - Rubén D. Guerrero N. | Creado con pasión y código.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
 </body>
 
 </html>
