@@ -1,6 +1,6 @@
 <div align="center">
   <a href="https://rubendarioguerreroneira.github.io/">
-    <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=280&section=header&text=Rubén%20D.%20Guerrero%20N.&fontSize=80&animation=fadeIn&fontAlignY=35&desc=Backend%20Developer%20%7C%20Open%20Source%20Contributor&descAlignY=55&descAlign=50" alt="Rubén D. Guerrero N. Header" width="100%"/>
+    <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0077b6,100:00b4d8&height=280&section=header&text=Rubén%20D.%20Guerrero%20N.&fontSize=80&animation=fadeIn&fontAlignY=35&desc=Backend%20Developer%20%7C%20Open%20Source%20Contributor&descAlignY=55&descAlign=50&fontColor=ffffff" alt="Rubén D. Guerrero N. Header" width="100%"/>
   </a>
 </div>
 
@@ -35,7 +35,18 @@ Soy un desarrollador apasionado por la **arquitectura escalable**, el **diseño 
 <div align="center">
   <h3>🛠️ Tech Stack</h3>
   
-  <img src="https://skillicons.dev/icons?i=js,ts,nodejs,nestjs,postgres,mongodb,graphql,docker,git,githubactions,vercel,gcp,firebase&perline=7" />
+  <img src="https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E" alt="JavaScript">
+  <img src="https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript">
+  <img src="https://img.shields.io/badge/nestjs-%23E0234E.svg?style=for-the-badge&logo=nestjs&logoColor=white" alt="NestJS">
+  <img src="https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white" alt="Node.js">
+  <img src="https://img.shields.io/badge/postgres-%23316192.svg?style=for-the-badge&logo=postgresql&logoColor=white" alt="PostgreSQL">
+  <img src="https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=white" alt="MongoDB">
+  <img src="https://img.shields.io/badge/-GraphQL-E10098?style=for-the-badge&logo=graphql&logoColor=white" alt="GraphQL">
+  <img src="https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white" alt="Git">
+  <img src="https://img.shields.io/badge/github%20actions-%232671E5.svg?style=for-the-badge&logo=githubactions&logoColor=white" alt="GitHub Actions">
+  <img src="https://img.shields.io/badge/-Docker-333?style=for-the-badge&logo=docker" alt="Docker">
+  <img src="https://img.shields.io/badge/vercel-%23000000.svg?style=for-the-badge&logo=vercel&logoColor=white" alt="Vercel">
+  <img src="https://img.shields.io/badge/GoogleCloud-%234285F4.svg?style=for-the-badge&logo=google-cloud&logoColor=white" alt="GCP">
 </div>
 
 ---
@@ -65,8 +76,7 @@ Aportes significativos al core del framework:
 - **Integridad**: Operaciones atómicas para Mint/Transfer/Burn.
 - **Escalabilidad**: Descubrimiento automático de nuevos contratos de proyectos.
 
-<details>
-<summary><strong>📐 Ver Diagrama de Arquitectura (Mermaid)</strong></summary>
+#### 📐 Diagrama de Arquitectura (Mermaid)
 
 ```mermaid
 sequenceDiagram
@@ -96,7 +106,7 @@ sequenceDiagram
     DB-->>-API_Principal: Devuelve datos indexados
     API_Principal-->>-Client: 200 OK
 ```
-</details>
+
 
 ---
 
@@ -162,14 +172,19 @@ API RESTful para gestión de parques (tickets, atracciones, empleados).
 
 ---
 
+<!--
 <div align="center">
   <h3>📊 GitHub Stats</h3>
   <br>
-  <img src="https://github-readme-stats.vercel.app/api?username=RubenDarioGuerreroNeira&show_icons=true&theme=tokyonight&hide_border=true&bg_color=00000000" height="180" alt="stats" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=RubenDarioGuerreroNeira&layout=compact&theme=tokyonight&hide_border=true&bg_color=00000000" height="180" alt="langs" />
+  
+  [![GitHub Stats](https://github-readme-stats.vercel.app/api?username=RubenDarioGuerreroNeira&show_icons=true&theme=tokyonight&hide_border=true)](https://github.com/RubenDarioGuerreroNeira)
+  [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=RubenDarioGuerreroNeira&layout=compact&theme=tokyonight&hide_border=true)](https://github.com/RubenDarioGuerreroNeira)
+  
   <br>
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=RubenDarioGuerreroNeira&theme=tokyonight&hide_border=true&background=00000000" alt="streak" />
+  
+  [![Streak Stats](https://streak-stats.demolab.com?user=RubenDarioGuerreroNeira&theme=tokyonight&hide_border=true)](https://git.io/streak-stats)
 </div>
+-->
 
 <div align="center">
   <br>
