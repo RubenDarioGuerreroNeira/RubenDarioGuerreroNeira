@@ -22,9 +22,10 @@ document.addEventListener('DOMContentLoaded', () => {
   const typingText = document.getElementById('typing-text');
   const roles = [
     "Backend Developer",
+    "Ingeniero Prompt",
+    "Desarrollo de Bots con IA",
     "Open Source Contributor",
-    "NestJS Enthusiast",
-    "Clean Code Advocate"
+    "NestJS Enthusiast"
   ];
   let roleIndex = 0;
   let charIndex = 0;
