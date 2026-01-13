@@ -222,7 +222,14 @@
                             <p>Contribuyo activamente al framework de e-commerce headless #1 en NestJS, **impactando a
                                 una comunidad global de más de 10.000 desarrolladores**. Implemento mejoras críticas en
                                 core, testing y transacciones, **optimizando la estabilidad y el rendimiento** de la
-                                plataforma.</p>
+                                plataforma.
+                                <br><br>
+                                Recientemente implementé **Pessimistic Locking** (SELECT ... FOR UPDATE) en el
+                                <code>OrderService</code>. Actualicé <code>getOrderOrThrow</code> y apliqué bloqueos a
+                                métodos críticos de modificación (ej. <code>addItemsToOrder</code>), asegurando que las
+                                transacciones concurrentes se bloqueen y esperen, garantizando la integridad absoluta de
+                                los datos.
+                            </p>
                             <div class="tags">
                                 <span class="tag">NestJS</span>
                                 <span class="tag">TypeScript</span>
