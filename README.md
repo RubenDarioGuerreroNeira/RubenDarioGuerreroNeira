@@ -24,7 +24,11 @@
 
 > "Escribir código es fácil. Escribir código limpio, mantenible y escalable... esa es la verdadera aventura."
 
-Soy un desarrollador apasionado por la **arquitectura escalable**, el **diseño limpio** y los **sistemas distribuidos**. Actualmente, dedico gran parte de mi tiempo al Open Source.
+Soy un desarrollador apasionado por la **arquitectura escalable**, el **diseño limpio** y los **sistemas distribuidos**. Me especializo en construir soluciones backend robustas utilizando **NestJS**, con un enfoque profundo en la integridad de datos y el rendimiento.
+
+Recientemente, implementé **Pessimistic Locking (SELECT ... FOR UPDATE)** en el core de **[Vendure](https://github.com/vendure-ecommerce/vendure)**, resolviendo condiciones de carrera críticas en la gestión de órdenes de alto volumen. Mi experiencia va desde la optimización de consultas SQL complejas hasta el diseño de microservicios resilientes.
+ 
+ Además, poseo sólida experiencia en el desarrollo de **Bots Conversacionales** potenciados por **Inteligencia Artificial** (LLMs), integrando capacidades de entendimiento de lenguaje natural. Domino técnicas avanzadas de **Web Scraping** con **Puppeteer** para la extracción automatizada de datos, y diseño flujos de persistencia robustos utilizando bases de datos relacionales como **PostgreSQL**.
 
 - 🔭 Contribuidor activo en **[Vendure](https://github.com/vendure-ecommerce/vendure)** (e-commerce headless en NestJS).
 - 🌱 Siempre aprendiendo nuevas tecnologías y patrones de diseño.
