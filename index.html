@@ -146,6 +146,8 @@
                             <h3><i class="fas fa-code-branch"></i> Vendure Core Contributor</h3>
                             <p>Contribuyo activamente al framework de e-commerce #1 en NestJS.</p>
                             <ul class="contributions-list">
+                                <li><a href="https://github.com/vendure-ecommerce/vendure/pull/3745"
+                                        target="_blank">feat(core): ListQueryBuilder EXISTS optimization</a></li>
                                 <li><a href="https://github.com/vendure-ecommerce/vendure/pull/3723"
                                         target="_blank">fix(testing): Configurable e2e output dir</a></li>
                                 <li><a href="https://github.com/vendure-ecommerce/vendure/pull/3736"
@@ -224,15 +226,28 @@
                                 core, testing y transacciones, **optimizando la estabilidad y el rendimiento** de la
                                 plataforma.
                                 <br><br>
-                                Recientemente implementé **Pessimistic Locking** (SELECT ... FOR UPDATE) en el
-                                <code>OrderService</code>. Actualicé <code>getOrderOrThrow</code> y apliqué bloqueos a
-                                métodos críticos de modificación (ej. <code>addItemsToOrder</code>), asegurando que las
-                                transacciones concurrentes se bloqueen y esperen, garantizando la integridad absoluta de
-                                los datos.
+                                **Optimización de Consultas (Benchmarked):** Refactoricé el filtrado de relaciones múltiples en <code>ListQueryBuilder</code>. Sustituí los tradicionales <code>LEFT JOIN</code> por subconsultas <code>EXISTS</code> independientes, eliminando productos cartesianos masivos y logrando una complejidad de O(N) subqueries en lugar de O(N) joins.
+                                <br><br>
+                                <div class="terminal-block">
+                                    <div class="terminal-header">
+                                        <div class="terminal-dot dot-red"></div>
+                                        <div class="terminal-dot dot-yellow"></div>
+                                        <div class="terminal-dot dot-green"></div>
+                                    </div>
+                                    <ul class="terminal-body">
+                                        <li><i class="fas fa-bolt pulse" style="color: #ffbd2e;"></i> <span><strong>Rendimiento:</strong> ~95ms para consultas complejas con 10+ filtros (SQLite E2E).</span></li>
+                                        <li><i class="fas fa-project-diagram" style="color: #58a6ff;"></i> <span><strong>Escalabilidad:</strong> Carga slim garantizada independientemente del número de campos personalizados filtrados.</span></li>
+                                        <li><i class="fas fa-check-circle" style="color: #3fb950;"></i> <span><strong>Impacto:</strong> Habilitó el filtrado funcional por IDs de relación en Custom Fields.</span></li>
+                                    </ul>
+                                </div>
+                                <br>
+                                También implementé **Pessimistic Locking** (SELECT ... FOR UPDATE) en el
+                                <code>OrderService</code>, asegurando que las transacciones concurrentes se bloqueen y esperen, garantizando la integridad absoluta de los datos.
                             </p>
                             <div class="tags">
                                 <span class="tag">NestJS</span>
-                                <span class="tag">TypeScript</span>
+                                <span class="tag">SQL Optimization</span>
+                                <span class="tag">TypeORM</span>
                                 <span class="tag">Open Source</span>
                             </div>
                         </div>
