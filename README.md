@@ -30,7 +30,7 @@ Recientemente, implementé **Pessimistic Locking (SELECT ... FOR UPDATE)** en el
  
  Además, poseo sólida experiencia en el desarrollo de **Bots Conversacionales** potenciados por **Inteligencia Artificial** (LLMs), integrando capacidades de entendimiento de lenguaje natural. Domino técnicas avanzadas de **Web Scraping** con **Puppeteer** para la extracción automatizada de datos, y diseño flujos de persistencia robustos utilizando bases de datos relacionales como **PostgreSQL**.
 
-- 🔭 Contribuidor activo en **[Vendure](https://github.com/vendure-ecommerce/vendure)** (e-commerce headless en NestJS).
+- 🔭 Contribuidor activo en **[Vendure](https://github.com/vendure-ecommerce/vendure)** (e-commerce headless en NestJS). Recientemente optimicé el rendimiento de consultas dinámicas mediante **EXISTS** y benchmarks E2E.
 - 🌱 Siempre aprendiendo nuevas tecnologías y patrones de diseño.
 - 💬 Hablemos sobre **NestJS**, **Microservicios** y **Clean Architecture**.
 
@@ -44,13 +44,11 @@ Recientemente, implementé **Pessimistic Locking (SELECT ... FOR UPDATE)** en el
   <img src="https://img.shields.io/badge/nestjs-%23E0234E.svg?style=for-the-badge&logo=nestjs&logoColor=white" alt="NestJS">
   <img src="https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white" alt="Node.js">
   <img src="https://img.shields.io/badge/postgres-%23316192.svg?style=for-the-badge&logo=postgresql&logoColor=white" alt="PostgreSQL">
-  <img src="https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=white" alt="MongoDB">
-  <img src="https://img.shields.io/badge/-GraphQL-E10098?style=for-the-badge&logo=graphql&logoColor=white" alt="GraphQL">
+  <img src="https://img.shields.io/badge/n8n-%23FF6C37.svg?style=for-the-badge&logo=n8n&logoColor=white" alt="n8n">
+  <img src="https://img.shields.io/badge/AI_Mistral-black?style=for-the-badge&logo=mistralai&logoColor=white" alt="Mistral AI">
   <img src="https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white" alt="Git">
   <img src="https://img.shields.io/badge/github%20actions-%232671E5.svg?style=for-the-badge&logo=githubactions&logoColor=white" alt="GitHub Actions">
   <img src="https://img.shields.io/badge/-Docker-333?style=for-the-badge&logo=docker" alt="Docker">
-  <img src="https://img.shields.io/badge/vercel-%23000000.svg?style=for-the-badge&logo=vercel&logoColor=white" alt="Vercel">
-  <img src="https://img.shields.io/badge/GoogleCloud-%234285F4.svg?style=for-the-badge&logo=google-cloud&logoColor=white" alt="GCP">
 </div>
 
 ---
@@ -59,6 +57,7 @@ Recientemente, implementé **Pessimistic Locking (SELECT ... FOR UPDATE)** en el
 
 ### 🛍️ [Vendure](https://github.com/vendure-ecommerce/vendure)
 Aportes significativos al core del framework:
+- **[feat(core): ListQueryBuilder EXISTS optimization](https://github.com/vendure-ecommerce/vendure/pull/3745)**: Refactorización crítica para el filtrado dinámico. Sustituí `LEFT JOIN` por subconsultas `EXISTS`, optimizando el rendimiento en bases de datos de alto volumen.
 - [`fix(testing)`](https://github.com/vendure-ecommerce/vendure/pull/3723): Make e2e test output directory configurable
 - [`fix(core)`](https://github.com/vendure-ecommerce/vendure/pull/3736): Prevent circular ref on ShippingMethod serialization
 - [`fix(core)`](https://github.com/vendure-ecommerce/vendure/pull/3734): Make payment state transitions idempotent
@@ -67,6 +66,16 @@ Aportes significativos al core del framework:
 ---
 
 ## 🏆 Proyectos Destacados
+
+### 🤖 CCSC Bot - Centro Clínico Madrid
+*Asistente Virtual Inteligente con n8n y Mistral AI*
+
+> Bot conversacional que centraliza información de 43 especialistas en 35 especialidades. Diseñado para automatizar consultas y mejorar la experiencia del paciente mediante IA.
+
+- **Stack**: n8n (Orquestación), Mistral AI (LLM), Telegram Bot API, Web Scraping.
+- **Diferencial**: Sistema de **fallback resiliente** y búsqueda *fuzzy* con normalización de texto para una interacción fluida en lenguaje natural.
+
+---
 
 ### 🟢 [Sustainable Credits Indexer](#)
 *Servicio Backend para RWA (Real World Assets)*
