@@ -18,21 +18,61 @@
   
 </div>
 
+<div align="center">
+  <h3>
+    <a href="#-español">🇪🇸 Español</a> | <a href="#-english">🇺🇸 English</a>
+  </h3>
+</div>
+
 <br/>
 
-## ⚡ Sobre mí
+---
+
+## 🇪🇸 Español
+
+### ⚡ Sobre mí
 
 > "Escribir código es fácil. Escribir código limpio, mantenible y escalable... esa es la verdadera aventura."
 
 Soy un desarrollador apasionado por la **arquitectura escalable**, el **diseño limpio** y los **sistemas distribuidos**. Me especializo en construir soluciones backend robustas utilizando **NestJS**, con un enfoque profundo en la integridad de datos y el rendimiento.
 
 Recientemente, implementé **Pessimistic Locking (SELECT ... FOR UPDATE)** en el core de **[Vendure](https://github.com/vendure-ecommerce/vendure)**, resolviendo condiciones de carrera críticas en la gestión de órdenes de alto volumen. Mi experiencia va desde la optimización de consultas SQL complejas hasta el diseño de microservicios resilientes.
- 
- Además, poseo sólida experiencia en el desarrollo de **Bots Conversacionales** potenciados por **Inteligencia Artificial** (LLMs), integrando capacidades de entendimiento de lenguaje natural. Domino técnicas avanzadas de **Web Scraping** con **Puppeteer** para la extracción automatizada de datos, y diseño flujos de persistencia robustos utilizando bases de datos relacionales como **PostgreSQL**.
 
 - 🔭 Contribuidor activo en **[Vendure](https://github.com/vendure-ecommerce/vendure)** (e-commerce headless en NestJS). Recientemente optimicé el rendimiento de consultas dinámicas mediante **EXISTS**, eliminé cuellos de botella N+1 (Issue #4387) con **Batch Loading** y modernicé el tooling del monorepo para compatibilidad con Windows.
 - 🌱 Siempre aprendiendo nuevas tecnologías y patrones de diseño.
 - 💬 Hablemos sobre **NestJS**, **Microservicios** y **Clean Architecture**.
+
+### 🚀 Contribuciones Open Source
+
+#### 🛍️ [Vendure](https://github.com/vendure-ecommerce/vendure)
+Aportes significativos al core del framework:
+- **[feat(core): ListQueryBuilder EXISTS optimization](https://github.com/vendure-ecommerce/vendure/pull/3745)**: Refactorización crítica para el filtrado dinámico. Sustituí `LEFT JOIN` por subconsultas `EXISTS`, optimizando el rendimiento en bases de datos de alto volumen.
+- **SQL & Architecture**: Resolución de Issue #4387 mediante *batch loading* con TypeORM (In operator) y diseño del método `getProductVariantsForCollections` para transacciones atómicas eficientes.
+- **DevOps & Tooling**: Sincronización crítica de monorepo (20+ archivos de configuración) y modernización de scripts internos (`generate-dates.ts`) para entornos Windows.
+
+---
+
+## 🇺🇸 English
+
+### ⚡ About Me
+
+> "Writing code is easy. Writing clean, maintainable, and scalable code... that's the true adventure."
+
+I am a developer passionate about **scalable architecture**, **clean design**, and **distributed systems**. I specialize in building robust backend solutions using **NestJS**, with a deep focus on data integrity and performance.
+
+Recently, I implemented **Pessimistic Locking (SELECT ... FOR UPDATE)** in the **[Vendure](https://github.com/vendure-ecommerce/vendure)** core, resolving critical race conditions in high-volume order management. My experience ranges from complex SQL query optimization to designing resilient microservices.
+
+- 🔭 Active contributor to **[Vendure](https://github.com/vendure-ecommerce/vendure)** (#1 NestJS headless e-commerce). Recently optimized dynamic query performance via **EXISTS**, eliminated N+1 bottlenecks (Issue #4387) with **Batch Loading**, and modernized monorepo tooling for Windows compatibility.
+- 🌱 Constantly learning new technologies and design patterns.
+- 💬 Let's talk about **NestJS**, **Microservices**, and **Clean Architecture**.
+
+### 🚀 Open Source Contributions
+
+#### 🛍️ [Vendure](https://github.com/vendure-ecommerce/vendure)
+Significant contributions to the framework core:
+- **[feat(core): ListQueryBuilder EXISTS optimization](https://github.com/vendure-ecommerce/vendure/pull/3745)**: Critical refactoring for dynamic filtering. Replaced `LEFT JOIN` with `EXISTS` subqueries, optimizing performance for high-volume databases.
+- **SQL & Architecture**: Resolved Issue #4387 via *batch loading* with TypeORM (In operator) and designed the `getProductVariantsForCollections` method for efficient atomic transactions.
+- **DevOps & Tooling**: Critical monorepo synchronization (20+ config files) and modernization of internal scripts (`generate-dates.ts`) for Windows environments.
 
 ---
 
@@ -53,157 +93,29 @@ Recientemente, implementé **Pessimistic Locking (SELECT ... FOR UPDATE)** en el
 
 ---
 
-## 🚀 Contribuciones Open Source
-
-### 🛍️ [Vendure](https://github.com/vendure-ecommerce/vendure)
-Aportes significativos al core del framework:
-- **[feat(core): ListQueryBuilder EXISTS optimization](https://github.com/vendure-ecommerce/vendure/pull/3745)**: Refactorización crítica para el filtrado dinámico. Sustituí `LEFT JOIN` por subconsultas `EXISTS`, optimizando el rendimiento en bases de datos de alto volumen.
-- **SQL & Architecture**: Resolución de Issue #4387 mediante *batch loading* con TypeORM (In operator) y diseño del método `getProductVariantsForCollections` para transacciones atómicas eficientes.
-- **DevOps & Tooling**: Sincronización crítica de monorepo (20+ archivos de configuración) y modernización de scripts internos (`generate-dates.ts`) para entornos Windows.
-- [`fix(testing)`](https://github.com/vendure-ecommerce/vendure/pull/3723): Make e2e test output directory configurable
-- [`fix(core)`](https://github.com/vendure-ecommerce/vendure/pull/3736): Prevent circular ref on ShippingMethod serialization
-- [`fix(core)`](https://github.com/vendure-ecommerce/vendure/pull/3734): Make payment state transitions idempotent
-- [`feat(core)`](https://github.com/vendure-ecommerce/vendure/pull/3739): Add `@Override()` decorator
-
----
-
-## 🏆 Proyectos Destacados
+## 🏆 Proyectos Destacados / Featured Projects
 
 ### 🤖 CCSC Bot - Centro Clínico Madrid
-*Asistente Virtual Inteligente con n8n y Mistral AI*
-
-> Bot conversacional que centraliza información de 43 especialistas en 35 especialidades. Diseñado para automatizar consultas y mejorar la experiencia del paciente mediante IA.
-
-- **Stack**: n8n (Orquestación), Mistral AI (LLM), Telegram Bot API, Web Scraping.
-- **Diferencial**: Sistema de **fallback resiliente** y búsqueda *fuzzy* con normalización de texto para una interacción fluida en lenguaje natural.
-
----
+*Intelligent Virtual Assistant with n8n and Mistral AI*
+> Bot conversacional que centraliza información de 43 especialistas en 35 especialidades. / Conversational bot centralizing info for 43 specialists across 35 specialties.
 
 ### 🟢 [Sustainable Credits Indexer](#)
-*Servicio Backend para RWA (Real World Assets)*
-
-> Indexador off-chain de eventos ERC-1155 para créditos de carbono, diseñado para empresas y reguladores que necesitan auditoría en tiempo real sin los costos de la blockchain.
-
-- **Stack**: NestJS, PostgreSQL, Ethers.js, Blockchain
-
-#### 🔍 Características
-- **Eficiencia radical**: Consultas instantáneas (PostgreSQL) vs. llamadas lentas a blockchain.
-- **Integridad**: Operaciones atómicas para Mint/Transfer/Burn.
-- **Escalabilidad**: Descubrimiento automático de nuevos contratos de proyectos.
-
-#### 📐 Diagrama de Arquitectura (Mermaid)
-
-```mermaid
-sequenceDiagram
-    participant Admin as Administrador
-    participant API_Principal as API REST (Backend)
-    participant DB as PostgreSQL Database
-    participant Indexer as Listener Service
-    participant Blockchain
-
-    Note over Indexer: Al iniciar, el Indexer carga todos los proyectos existentes.
-    Indexer->>+DB: GET /proyectos
-    DB-->>-Indexer: Lista de proyectos
-    Indexer->>Blockchain: Se suscribe a eventos de contratos
-
-    Admin->>+API_Principal: POST /proyectos (Nuevo proyecto)
-    API_Principal->>+DB: Guarda proyecto
-    DB-->>-API_Principal: Confirmación
-    API_Principal-->>Indexer: Evento 'proyecto.creado'
-    Indexer->>Blockchain: Suscripción a nuevo contrato
-
-    Blockchain-->>Indexer: Evento (Mint/Transfer/Burn)
-    Indexer->>+DB: Actualiza saldos (Atómico)
-    DB-->>-Indexer: Confirmación
-
-    Client->>+API_Principal: GET /proyectos/wallet/{address}
-    API_Principal->>+DB: Consulta saldos
-    DB-->>-API_Principal: Devuelve datos indexados
-    API_Principal-->>-Client: 200 OK
-```
-
-
----
+*Backend Service for RWA (Real World Assets)*
+> Indexador off-chain de eventos ERC-1155 para créditos de carbono. / Off-chain indexer for ERC-1155 carbon credit events.
 
 ### 🏥 Medical Appointments API
-*Sistema Integral de Gestión Clínica*
-
-API completa desarrollada en **NestJS** para la administración de clínicas. Permite la gestión de pacientes, médicos, citas y recetas con altos estándares de seguridad y rendimiento.
-
-**Tecnologías:** NestJS, TypeScript, PostgreSQL (TypeORM), JWT, Cloudinary.
-
-#### ✨ Funcionalidades Clave
-- **Roles y Permisos**: Sistema granular (Admin, Médico, Paciente).
-- **Gestión de Citas**: Flujo completo (solicitud, confirmación, cancelación).
-- **Historial Médico**: Almacenamiento JSONB de diagnósticos complejos.
-- **Recetas e Imágenes**: Subida de evidencias y recetas a la nube.
-- **Seguridad**: Autenticación JWT y validación estricta de datos.
-
-> **Documentación**: Disponible vía Swagger en el despliegue.
+*Integral Clinical Management System*
+> API completa en NestJS para administración de clínicas. / Full NestJS API for clinic management.
 
 ---
-
-### 🐂 Bot Taurino con IA (Telegram)
-*Asistente inteligente con NestJS y Gemini*
-
-Un bot avanzado que combina **Web Scraping** e **Inteligencia Artificial** para informar a los aficionados taurinos.
-
-**Tecnologías:** NestJS, Gemini API, Telegraf, Puppeteer, Cheerio, Redis (Caché).
-
-#### 🚀 Capacidades
-- **NLP Avanzado (Gemini)**: Entiende lenguaje natural como "quiero ver toros hoy" o "¿qué televisan el domingo?".
-- **Scraping Dual**: Extrae datos de transmisión (El Muletazo) y calendarios (Servitoro).
-- **Caché Inteligente**: Respuestas instantáneas y reducción de carga al servidor origen.
-- **Persistencia**: Recuerda el contexto de la conversación.
-
----
-
-### 🩺 Bot de Telegram para Citas Médicas
-*Interfaz conversacional para pacientes*
-
-Extensión de la API de Citas Médicas que acerca los servicios al paciente a través de Telegram.
-
-#### 💡 Funcionalidades Implementadas
-- **Geolocalización**: Encuentra farmacias y centros médicos cercanos.
-- **Gestión de Historial**: Consulta y creación de nuevos registros.
-- **Recordatorios**: Alertas para toma de medicamentos.
-- **Código QR de Emergencia**: Generación de QR con datos vitales (alergias, tipo de sangre) para primeros auxilios.
-
----
-
-### 📂 Otros Proyectos
-
-#### 🎳 Bowling Tournament Management
-Plataforma web para torneos de bolos, brackets y seguimiento en tiempo real.
-- **Stack**: Node.js, NestJS, PostgreSQL
-
-#### 🛒 Shopping Cart System
-Backend para e-commerce con lógica de carritos y pedidos.
-- **Stack**: Node.js, NestJS, PostgreSQL
-
-#### 🎡 Amusement Park API
-API RESTful para gestión de parques (tickets, atracciones, empleados).
-- **Stack**: NestJS, TypeORM, PostgreSQL
-
----
-
-<!--
-<div align="center">
-  <h3>📊 GitHub Stats</h3>
-  <br>
-  
-  [![GitHub Stats](https://github-readme-stats.vercel.app/api?username=RubenDarioGuerreroNeira&show_icons=true&theme=tokyonight&hide_border=true)](https://github.com/RubenDarioGuerreroNeira)
-  [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=RubenDarioGuerreroNeira&layout=compact&theme=tokyonight&hide_border=true)](https://github.com/RubenDarioGuerreroNeira)
-  
-  <br>
-  
-  [![Streak Stats](https://streak-stats.demolab.com?user=RubenDarioGuerreroNeira&theme=tokyonight&hide_border=true)](https://git.io/streak-stats)
-</div>
--->
 
 <div align="center">
   <br>
   <a href="https://rubendarioguerreroneira.github.io/RubenDarioGuerreroNeira">
     <img src="https://img.shields.io/badge/✨_Ver_Portafolio_Web_Completo-000000?style=for-the-badge&logo=googlechrome&logoColor=00f2ea" />
+  </a>
+  <br>
+  <a href="https://rubendarioguerreroneira.github.io/RubenDarioGuerreroNeira/index-en.html">
+    <img src="https://img.shields.io/badge/✨_View_Full_Web_Portfolio-000000?style=for-the-badge&logo=googlechrome&logoColor=00f2ea" />
   </a>
 </div>
