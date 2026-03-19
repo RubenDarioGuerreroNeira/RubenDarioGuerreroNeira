@@ -146,18 +146,13 @@
                         <div class="timeline-date">Present</div>
                         <div class="timeline-content glass-card">
                             <h3><i class="fas fa-code-branch"></i> Vendure Core Contributor</h3>
-                            <p>Actively contributing to the #1 NestJS-based e-commerce framework.</p>
+                            <p>High-traffic system optimization and service architecture in NestJS.</p>
                             <ul class="contributions-list">
-                                <li><a href="https://github.com/vendure-ecommerce/vendure/pull/3745"
-                                        target="_blank">feat(core): ListQueryBuilder EXISTS optimization</a></li>
-                                <li><a href="https://github.com/vendure-ecommerce/vendure/pull/3723"
-                                        target="_blank">fix(testing): Configurable e2e output dir</a></li>
-                                <li><a href="https://github.com/vendure-ecommerce/vendure/pull/3736"
-                                        target="_blank">fix(core): Prevent circular ref on Shipping</a></li>
-                                <li><a href="https://github.com/vendure-ecommerce/vendure/pull/3734"
-                                        target="_blank">fix(core): Idempotent payment transitions</a></li>
-                                <li><a href="https://github.com/vendure-ecommerce/vendure/pull/3739"
-                                        target="_blank">feat(core): Add @Override() decorator</a></li>
+                                <li><strong>SQL:</strong> N+1 query elimination via <em>In operator batch loading</em> (Issue #4387).</li>
+                                <li><strong>Architecture:</strong> Designed <code>getProductVariantsForCollections</code> for efficient transactions.</li>
+                                <li><strong>DevOps:</strong> Monorepo conflict resolution (20+ files) and dependency standardization.</li>
+                                <li><strong>Tooling:</strong> Modernization of internal automation scripts for Windows environments.</li>
+                                <li class="pr-link"><a href="https://github.com/vendure-ecommerce/vendure/pull/3745" target="_blank">View more PRs on GitHub</a></li>
                             </ul>
                         </div>
                     </div>
@@ -221,9 +216,9 @@
                         <div class="project-content">
                             <div class="project-header">
                                 <i class="fas fa-shopping-bag project-icon"></i>
-                                <h3>Vendure Core Contributor</h3>
+                                <h3>Vendure Core Contribution (Open Source/Fork)</h3>
                             </div>
-                            <p>I solved a critical performance bottleneck in Vendure Core by refactoring the <code>ListQueryBuilder</code>. I implemented <strong>EXISTS</strong>-based strategies for dynamic filtering, eliminating inefficient Cartesian products.
+                            <p>Optimized core performance by designing batch loading architectures and resolving critical bottlenecks in data filtering.
                                 <br><br>
                                 <div class="terminal-block">
                                     <div class="terminal-header">
@@ -232,19 +227,19 @@
                                         <div class="terminal-dot dot-green"></div>
                                     </div>
                                     <ul class="terminal-body">
-                                        <li><i class="fas fa-bolt pulse" style="color: #ffbd2e;"></i> <span><strong>Benchmark:</strong> Drastic reduction in response times (E2E validated).</span></li>
-                                        <li><i class="fas fa-microscope" style="color: #58a6ff;"></i> <span><strong>Test Suite:</strong> Implemented E2E benchmarks to prevent future regressions.</span></li>
-                                        <li><i class="fas fa-check-circle" style="color: #3fb950;"></i> <span><strong>Scalability:</strong> Queries optimized for millions of records.</span></li>
+                                        <li><i class="fas fa-database" style="color: #ffbd2e;"></i> <span><strong>SQL Optimization:</strong> Eliminated N+1 queries (Issue #4387) using <em>batch loading</em> with TypeORM's In operator.</span></li>
+                                        <li><i class="fas fa-project-diagram" style="color: #58a6ff;"></i> <span><strong>Architecture:</strong> Implemented <code>getProductVariantsForCollections</code> for efficient atomic transactions.</span></li>
+                                        <li><i class="fas fa-tools" style="color: #3fb950;"></i> <span><strong>DevOps/Tooling:</strong> Monorepo synchronization (20+ files) and Node.js script modernization for Windows.</span></li>
                                     </ul>
                                 </div>
                                 <br>
-                                Nothing like seeing those response times drop drastically. 📉⚡
+                                Solving complex problems at the heart of modern e-commerce. 📉⚡
                             </p>
                             <div class="tags">
-                                <span class="tag">NestJS</span>
+                                <span class="tag">TypeORM</span>
                                 <span class="tag">SQL Optimization</span>
-                                <span class="tag">Benchmark</span>
-                                <span class="tag">Open Source</span>
+                                <span class="tag">Monorepo (Lerna)</span>
+                                <span class="tag">Node.js Modernization</span>
                             </div>
                         </div>
                     </article>

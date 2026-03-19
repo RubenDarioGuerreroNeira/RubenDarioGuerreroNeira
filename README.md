@@ -30,7 +30,7 @@ Recientemente, implementé **Pessimistic Locking (SELECT ... FOR UPDATE)** en el
  
  Además, poseo sólida experiencia en el desarrollo de **Bots Conversacionales** potenciados por **Inteligencia Artificial** (LLMs), integrando capacidades de entendimiento de lenguaje natural. Domino técnicas avanzadas de **Web Scraping** con **Puppeteer** para la extracción automatizada de datos, y diseño flujos de persistencia robustos utilizando bases de datos relacionales como **PostgreSQL**.
 
-- 🔭 Contribuidor activo en **[Vendure](https://github.com/vendure-ecommerce/vendure)** (e-commerce headless en NestJS). Recientemente optimicé el rendimiento de consultas dinámicas mediante **EXISTS** y benchmarks E2E.
+- 🔭 Contribuidor activo en **[Vendure](https://github.com/vendure-ecommerce/vendure)** (e-commerce headless en NestJS). Recientemente optimicé el rendimiento de consultas dinámicas mediante **EXISTS**, eliminé cuellos de botella N+1 (Issue #4387) con **Batch Loading** y modernicé el tooling del monorepo para compatibilidad con Windows.
 - 🌱 Siempre aprendiendo nuevas tecnologías y patrones de diseño.
 - 💬 Hablemos sobre **NestJS**, **Microservicios** y **Clean Architecture**.
 
@@ -58,6 +58,8 @@ Recientemente, implementé **Pessimistic Locking (SELECT ... FOR UPDATE)** en el
 ### 🛍️ [Vendure](https://github.com/vendure-ecommerce/vendure)
 Aportes significativos al core del framework:
 - **[feat(core): ListQueryBuilder EXISTS optimization](https://github.com/vendure-ecommerce/vendure/pull/3745)**: Refactorización crítica para el filtrado dinámico. Sustituí `LEFT JOIN` por subconsultas `EXISTS`, optimizando el rendimiento en bases de datos de alto volumen.
+- **SQL & Architecture**: Resolución de Issue #4387 mediante *batch loading* con TypeORM (In operator) y diseño del método `getProductVariantsForCollections` para transacciones atómicas eficientes.
+- **DevOps & Tooling**: Sincronización crítica de monorepo (20+ archivos de configuración) y modernización de scripts internos (`generate-dates.ts`) para entornos Windows.
 - [`fix(testing)`](https://github.com/vendure-ecommerce/vendure/pull/3723): Make e2e test output directory configurable
 - [`fix(core)`](https://github.com/vendure-ecommerce/vendure/pull/3736): Prevent circular ref on ShippingMethod serialization
 - [`fix(core)`](https://github.com/vendure-ecommerce/vendure/pull/3734): Make payment state transitions idempotent
