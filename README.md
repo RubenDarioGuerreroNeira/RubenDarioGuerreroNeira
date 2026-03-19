@@ -50,6 +50,51 @@ Aportes significativos al core del framework:
 - **SQL & Architecture**: Resolución de Issue #4387 mediante *batch loading* con TypeORM (In operator) y diseño del método `getProductVariantsForCollections` para transacciones atómicas eficientes.
 - **DevOps & Tooling**: Sincronización crítica de monorepo (20+ archivos de configuración) y modernización de scripts internos (`generate-dates.ts`) para entornos Windows.
 
+### 🏆 Proyectos Destacados
+
+#### 🤖 CCSC Bot - Centro Clínico Madrid
+*Asistente Virtual Inteligente con n8n y Mistral AI*
+> Bot conversacional que centraliza información de 43 especialistas en 35 especialidades. Diseñado para automatizar consultas y mejorar la experiencia del paciente mediante IA.
+
+#### 🟢 [Sustainable Credits Indexer](#)
+*Servicio Backend para RWA (Real World Assets)*
+> Indexador off-chain de eventos ERC-1155 para créditos de carbono.
+
+#### 📐 Diagrama de Arquitectura (Mermaid)
+
+```mermaid
+sequenceDiagram
+    participant Admin as Administrador
+    participant API_Principal as API REST (Backend)
+    participant DB as PostgreSQL Database
+    participant Indexer as Listener Service
+    participant Blockchain
+
+    Note over Indexer: Al iniciar, el Indexer carga todos los proyectos existentes.
+    Indexer->>+DB: GET /proyectos
+    DB-->>-Indexer: Lista de proyectos
+    Indexer->>Blockchain: Se suscribe a eventos de contratos
+
+    Admin->>+API_Principal: POST /proyectos (Nuevo proyecto)
+    API_Principal->>+DB: Guarda proyecto
+    DB-->>-API_Principal: Confirmación
+    API_Principal-->>Indexer: Evento 'proyecto.creado'
+    Indexer->>Blockchain: Suscripción a nuevo contrato
+
+    Blockchain-->>Indexer: Evento (Mint/Transfer/Burn)
+    Indexer->>+DB: Actualiza saldos (Atómico)
+    DB-->>-Indexer: Confirmación
+
+    Client->>+API_Principal: GET /proyectos/wallet/{address}
+    API_Principal->>+DB: Consulta saldos
+    DB-->>-API_Principal: Devuelve datos indexados
+    API_Principal-->>-Client: 200 OK
+```
+
+#### 🏥 Medical Appointments API
+*Sistema Integral de Gestión Clínica*
+> API completa en NestJS para administración de clínicas.
+
 ---
 
 ## 🇺🇸 English
@@ -74,6 +119,51 @@ Significant contributions to the framework core:
 - **SQL & Architecture**: Resolved Issue #4387 via *batch loading* with TypeORM (In operator) and designed the `getProductVariantsForCollections` method for efficient atomic transactions.
 - **DevOps & Tooling**: Critical monorepo synchronization (20+ config files) and modernization of internal scripts (`generate-dates.ts`) for Windows environments.
 
+### 🏆 Featured Projects
+
+#### 🤖 CCSC Bot - Clinical Center Madrid
+*Intelligent Virtual Assistant with n8n and Mistral AI*
+> Conversational bot centralizing info for 43 specialists across 35 specialties. Designed to automate queries and improve patient experience via AI.
+
+#### 🟢 [Sustainable Credits Indexer](#)
+*Backend Service for RWA (Real World Assets)*
+> Off-chain indexer for ERC-1155 carbon credit events.
+
+#### 📐 Architecture Diagram (Mermaid)
+
+```mermaid
+sequenceDiagram
+    participant Admin as Administrator
+    participant API_Principal as REST API (Backend)
+    participant DB as PostgreSQL Database
+    participant Indexer as Listener Service
+    participant Blockchain
+
+    Note over Indexer: On startup, the Indexer loads all existing projects.
+    Indexer->>+DB: GET /projects
+    DB-->>-Indexer: List of projects
+    Indexer->>Blockchain: Subscribes to contract events
+
+    Admin->>+API_Principal: POST /projects (New project)
+    API_Principal->>+DB: Saves project
+    DB-->>-API_Principal: Confirmation
+    API_Principal-->>Indexer: Event 'project.created'
+    Indexer->>Blockchain: Subscription to new contract
+
+    Blockchain-->>Indexer: Event (Mint/Transfer/Burn)
+    Indexer->>+DB: Updates balances (Atomic)
+    DB-->>-Indexer: Confirmation
+
+    Client->>+API_Principal: GET /projects/wallet/{address}
+    API_Principal->>+DB: Query balances
+    DB-->>-API_Principal: Returns indexed data
+    API_Principal-->>-Client: 200 OK
+```
+
+#### 🏥 Medical Appointments API
+*Integral Clinical Management System*
+> Full NestJS API for clinic management.
+
 ---
 
 <div align="center">
@@ -90,22 +180,6 @@ Significant contributions to the framework core:
   <img src="https://img.shields.io/badge/github%20actions-%232671E5.svg?style=for-the-badge&logo=githubactions&logoColor=white" alt="GitHub Actions">
   <img src="https://img.shields.io/badge/-Docker-333?style=for-the-badge&logo=docker" alt="Docker">
 </div>
-
----
-
-## 🏆 Proyectos Destacados / Featured Projects
-
-### 🤖 CCSC Bot - Centro Clínico Madrid
-*Intelligent Virtual Assistant with n8n and Mistral AI*
-> Bot conversacional que centraliza información de 43 especialistas en 35 especialidades. / Conversational bot centralizing info for 43 specialists across 35 specialties.
-
-### 🟢 [Sustainable Credits Indexer](#)
-*Backend Service for RWA (Real World Assets)*
-> Indexador off-chain de eventos ERC-1155 para créditos de carbono. / Off-chain indexer for ERC-1155 carbon credit events.
-
-### 🏥 Medical Appointments API
-*Integral Clinical Management System*
-> API completa en NestJS para administración de clínicas. / Full NestJS API for clinic management.
 
 ---
 
