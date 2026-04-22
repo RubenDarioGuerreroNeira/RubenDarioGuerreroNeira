@@ -228,8 +228,11 @@
                                     </div>
                                     <ul class="terminal-body">
                                         <li><i class="fas fa-database" style="color: #ffbd2e;"></i> <span><strong>SQL Optimization:</strong> Eliminación de N+1 queries (Issue #4387) mediante <em>batch loading</em> con TypeORM In operator.</span></li>
+                                        <li><i class="fas fa-search-plus" style="color: #ffbd2e;"></i> <span><strong>Optimización Catálogo (N+1):</strong> Reducción de overhead mediante subconsultas <code>EXISTS</code> para omitir JOINs innecesarios en relaciones Many-to-One.</span></li>
                                         <li><i class="fas fa-project-diagram" style="color: #58a6ff;"></i> <span><strong>Arquitectura:</strong> Implementación de <code>getProductVariantsForCollections</code> para transacciones atómicas eficientes.</span></li>
+                                        <li><i class="fas fa-plug" style="color: #58a6ff;"></i> <span><strong>DI System:</strong> Refactorización de <code>Injector</code> y <code>ConfigModule</code> para manejo seguro de <code>ModuleRef</code> y validaciones descriptivas en el bootstrap.</span></li>
                                         <li><i class="fas fa-tools" style="color: #3fb950;"></i> <span><strong>DevOps/Tooling:</strong> Sincronización de monorepo (20+ archivos) y modernización de scripts Node.js para Windows.</span></li>
+                                        <li><i class="fas fa-user-shield" style="color: #3fb950;"></i> <span><strong>Seguridad de Tipos:</strong> Eliminación de <code>as any</code> por tipado estricto y <em>optional chaining</em> en el módulo de pagos Braintree.</span></li>
                                     </ul>
                                 </div>
                                 <br>
