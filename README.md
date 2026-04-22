@@ -185,11 +185,11 @@ sequenceDiagram
 
 <div align="center">
   <br>
-  <a href="https://rubendarioguerreroneira.github.io/">
+  <a href="https://rubendarioguerreroneira.github.io/RubenDarioGuerreroNeira/">
     <img src="https://img.shields.io/badge/✨_Ver_Portafolio_Web_Completo-000000?style=for-the-badge&logo=googlechrome&logoColor=00f2ea" />
   </a>
   <br>
-  <a href="https://rubendarioguerreroneira.github.io/index-en.html">
+  <a href="https://rubendarioguerreroneira.github.io/RubenDarioGuerreroNeira/index-en.html">
     <img src="https://img.shields.io/badge/✨_View_Full_Web_Portfolio-000000?style=for-the-badge&logo=googlechrome&logoColor=00f2ea" />
   </a>
 </div>
