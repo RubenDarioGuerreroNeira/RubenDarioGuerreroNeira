@@ -1,26 +1,26 @@
 <div align="center">
-  <a href="https://rubendarioguerreroneira.github.io/">
-    <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0077b6,100:00b4d8&height=280&section=header&text=Rubén%20D.%20Guerrero%20N.&fontSize=80&animation=fadeIn&fontAlignY=35&desc=Backend%20Developer%20%7C%20Open%20Source%20Contributor&descAlignY=55&descAlign=50&fontColor=ffffff" alt="Rubén D. Guerrero N. Header" width="100%"/>
-  </a>
+  <img src="https://capsule-render.vercel.app/api?type=soft&color=0:1a1c2c,100:4a192c&height=250&section=header&text=Rubén%20D.%20Guerrero%20N.&fontSize=70&animation=fadeIn&fontAlignY=40&desc=Senior%20Backend%20Engineer%20%7C%20Open%20Source%20Contributor&descAlignY=60&descAlign=50&fontColor=ffffff" alt="Header" width="100%"/>
 </div>
 
 <div align="center">
-  <a href="https://git.io/typing-svg">
-    <img src="https://readme-typing-svg.herokuapp.com?font=Outfit&weight=600&size=25&pause=1000&color=33C2F7&center=true&vCenter=true&width=500&lines=Backend+Developer;NestJS+Expert;Open+Source+Contributor;Clean+Code+Enthusiast" alt="Typing SVG" />
+  <br/>
+  <a href="https://linkedin.com/in/ruben-d-guerrero-n-9276bb195/">
+    <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
   </a>
-</div>
-
-<div align="center">
-  
-  [![LinkedIn](https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/ruben-d-guerrero-n-9276bb195/)
-  [![Email](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:rudargeneira@gmail.com)
-  [![Telegram](https://img.shields.io/badge/Telegram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white)](https://t.me/Rubedev)
-  
+  <a href="mailto:rudargeneira@gmail.com">
+    <img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" />
+  </a>
+  <a href="https://t.me/Rubedev">
+    <img src="https://img.shields.io/badge/Telegram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white" alt="Telegram" />
+  </a>
+  <br/>
+  <br/>
+  <img src="https://readme-typing-svg.herokuapp.com?font=Outfit&weight=600&size=24&pause=1000&color=F7DF1E&center=true&vCenter=true&width=500&lines=Building+Scalable+E-commerce;NestJS+Core+Contributor;SQL+Optimization+Expert;Clean+Architecture+Enthusiast" alt="Typing SVG" />
 </div>
 
 <div align="center">
   <h3>
-    <a href="#-español">🇪🇸 Español</a> | <a href="#-english">🇺🇸 English</a>
+    <a href="#-español">🇪🇸 ES</a> • <a href="#-english">🇺🇸 EN</a>
   </h3>
 </div>
 
