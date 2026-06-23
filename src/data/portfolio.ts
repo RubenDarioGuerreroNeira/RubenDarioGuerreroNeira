@@ -60,27 +60,29 @@ export const portfolioData = {
     {
       id: "ecosistema-ia-colombia",
       title: {
-        es: "Salud IA Bot - Colombia",
-        en: "Salud IA Bot - Colombia"
+        es: "Salud IA Bot - Colombia 🏥",
+        en: "Salud IA Bot - Colombia 🏥"
       },
       description: {
-        es: "Asistente inteligente de salud pública que utiliza RAG para democratizar el acceso a información sanitaria. Procesa datos del SIVIGILA, vacunación y factores ambientales para ofrecer recomendaciones preventivas.",
-        en: "Intelligent public health assistant using RAG to democratize access to health information. Processes SIVIGILA data, vaccination, and environmental factors to provide preventive recommendations."
+        es: "Bot de salud pública en Telegram que democratiza el acceso a información sanitaria en Colombia. Usa <strong>Meta LLaMA 3.1 70B</strong> vía OpenRouter con arquitectura RAG para responder sobre SIVIGILA, vacunación, salud mental CIE-10 y salud sexual. Genera gráficos dinámicos con QuickChart y localiza centros de salud por geolocalización en Antioquia, Boyacá, Yopal y Cali.",
+        en: "Telegram public health bot democratizing access to health information in Colombia. Uses <strong>Meta LLaMA 3.1 70B</strong> via OpenRouter with RAG architecture to answer queries about SIVIGILA, vaccination, CIE-10 mental health, and sexual health. Generates dynamic charts with QuickChart and locates health centers by geolocation in Antioquia, Boyacá, Yopal, and Cali."
       },
-      tags: ["NestJS", "Firebase Genkit", "Gemini 2.5", "RAG", "Telegram API"],
+      tags: ["NestJS", "Meta LLaMA 3.1", "OpenRouter", "RAG", "Telegram API", "QuickChart", "TypeScript"],
       isFeatured: true,
       icon: "activity",
       github: "https://github.com/RubenDarioGuerreroNeira/Ecosistema-IA-Colombia",
       terminalContent: {
         es: [
-          { icon: "brain", text: "**IA con RAG:** Respuestas precisas basadas en contextos reales de salud pública." },
-          { icon: "bar-chart", text: "**Visualización Dinámica:** Generación de gráficos de tendencias epidemiológicas." },
-          { icon: "map-pin", text: "**Geolocalización:** Búsqueda inteligente de centros de salud cercanos." }
+          { icon: "brain", text: "**IA con RAG:** LLaMA 3.1 70B + contexto real de SIVIGILA y datos epidemiológicos." },
+          { icon: "bar-chart", text: "**Visualización Dinámica:** Gráficos de barras, tortas y líneas vía QuickChart." },
+          { icon: "map-pin", text: "**Geolocalización:** Centros de salud cercanos en Antioquia, Boyacá, Yopal y Cali." },
+          { icon: "database", text: "**Módulos Especializados:** Salud sexual, mental CIE-10, análisis epidemiológico y ML predictivo." }
         ],
         en: [
-          { icon: "brain", text: "**AI with RAG:** Accurate responses based on real public health contexts." },
-          { icon: "bar-chart", text: "**Dynamic Visualization:** Epidemiological trend chart generation." },
-          { icon: "map-pin", text: "**Geolocation:** Smart search for nearby health centers." }
+          { icon: "brain", text: "**AI with RAG:** LLaMA 3.1 70B + real SIVIGILA and epidemiological data context." },
+          { icon: "bar-chart", text: "**Dynamic Visualization:** Bar, pie, and line charts via QuickChart." },
+          { icon: "map-pin", text: "**Geolocation:** Nearby health centers in Antioquia, Boyacá, Yopal, and Cali." },
+          { icon: "database", text: "**Specialized Modules:** Sexual health, CIE-10 mental health, epidemiological analysis and predictive ML." }
         ]
       }
     },
