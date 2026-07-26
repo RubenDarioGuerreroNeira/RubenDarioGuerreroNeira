@@ -4,7 +4,8 @@ export const portfolioData = {
   email: "rudargeneira@gmail.com",
   linkedin: "https://www.linkedin.com/in/ruben-d-guerrero-n-9276bb195/",
   github: "https://github.com/RubenDarioGuerreroNeira",
-  telegram: "https://t.me/Rubedev",
+  telegram: "https://t.me/Rubendgn",
+  whatsapp: "https://wa.me/Rubendgn",
   about: {
     es: [
       "Soy un desarrollador backend apasionado por la <span class=\"text-primary font-bold\">arquitectura escalable</span>, los <span class=\"text-primary font-bold\">sistemas distribuidos</span> y la <span class=\"text-primary font-bold\">Clean Architecture</span>. Mi filosofía es que escribir código es el medio, pero construir sistemas mantenibles y resilientes es el verdadero arte.",
