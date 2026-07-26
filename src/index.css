@@ -7,25 +7,37 @@
   --color-glass-bg: rgba(255, 255, 255, 0.03);
   --color-glass-border: rgba(255, 255, 255, 0.1);
   --color-card-hover: rgba(255, 255, 255, 0.08);
-  
+
   --font-outfit: "Outfit", sans-serif;
-  
-  --animate-glitch: glitch 1s linear infinite;
+  --font-inter: "Inter", system-ui, sans-serif;
 }
 
 @layer base {
   :root {
-    --bg-color: #050505;
-    --text-color: #e0e0e0;
-    --text-muted: #a0a0a0;
+    --bg-color: #0f172a;
+    --text-color: #e2e8f0;
+    --text-muted: #94a3b8;
     --primary-color: #00f2ea;
     --secondary-color: #ff0050;
     --accent-color: #7000ff;
     --glass-bg: rgba(255, 255, 255, 0.03);
     --glass-border: rgba(255, 255, 255, 0.1);
-    --card-hover: rgba(255, 255, 255, 0.08);
-    --font-main: "Outfit", sans-serif;
-    --gradient-text: linear-gradient(45deg, var(--primary-color), var(--accent-color));
+    --card-hover: rgba(255, 255, 255, 0.05);
+    --font-main: "Inter", sans-serif;
+    --gradient-text: linear-gradient(
+      45deg,
+      var(--primary-color),
+      var(--accent-color)
+    );
+  }
+
+  .light {
+    --bg-color: #f8fafc;
+    --text-color: #0f172a;
+    --text-muted: #475569;
+    --glass-bg: rgba(255, 255, 255, 0.7);
+    --glass-border: rgba(0, 0, 0, 0.08);
+    --card-hover: rgba(0, 0, 0, 0.03);
   }
 
   html {
@@ -33,7 +45,11 @@
   }
 
   body {
-    @apply font-outfit bg-[#050505] text-[#e0e0e0] leading-relaxed overflow-x-hidden;
+    @apply font-inter bg-[#0F172A] text-[#E2E8F0] leading-relaxed overflow-x-hidden tracking-tight;
+  }
+
+  body.light {
+    @apply bg-[#F8FAFC] text-[#0F172A];
   }
 }
 
@@ -66,13 +82,29 @@
   .btn-secondary {
     @apply border border-white/20 text-white hover:bg-white/10 hover:border-white/40;
   }
+
+  .light .btn-secondary {
+    @apply border-gray-300 text-gray-900 hover:bg-gray-100;
+  }
 }
 
 @keyframes glitch {
-  0% { transform: translate(0); }
-  20% { transform: translate(-2px, 2px); }
-  40% { transform: translate(-2px, -2px); }
-  60% { transform: translate(2px, 2px); }
-  80% { transform: translate(2px, -2px); }
-  100% { transform: translate(0); }
+  0% {
+    transform: translate(0);
+  }
+  20% {
+    transform: translate(-2px, 2px);
+  }
+  40% {
+    transform: translate(-2px, -2px);
+  }
+  60% {
+    transform: translate(2px, 2px);
+  }
+  80% {
+    transform: translate(2px, -2px);
+  }
+  100% {
+    transform: translate(0);
+  }
 }

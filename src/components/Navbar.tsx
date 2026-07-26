@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Menu, X, Globe } from 'lucide-react';
+import { Menu, X, Globe, Sun, Moon } from 'lucide-react';
+import { useTheme } from '../contexts/ThemeContext';
 import { cn } from '../utils/cn';
 
 interface NavbarProps {
@@ -11,6 +12,7 @@ interface NavbarProps {
 const Navbar: React.FC<NavbarProps> = ({ lang, setLang }) => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const { isDark, toggleTheme } = useTheme();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -25,6 +27,7 @@ const Navbar: React.FC<NavbarProps> = ({ lang, setLang }) => {
     { name: lang === 'es' ? 'Experiencia' : 'Experience', href: '#experience' },
     { name: lang === 'es' ? 'Stack' : 'Stack', href: '#tech-stack' },
     { name: lang === 'es' ? 'Proyectos' : 'Projects', href: '#projects' },
+    { name: lang === 'es' ? 'Contacto' : 'Contact', href: '#contact' },
   ];
 
   return (
@@ -66,15 +69,19 @@ const Navbar: React.FC<NavbarProps> = ({ lang, setLang }) => {
 
           <div className="flex items-center gap-4 border-l border-white/10 pl-8">
             <button
+              onClick={toggleTheme}
+              className="flex items-center gap-2 text-sm font-bold hover:text-primary transition-colors"
+              aria-label="Toggle theme"
+            >
+              {isDark ? <Sun size={16} /> : <Moon size={16} />}
+            </button>
+            <button
               onClick={() => setLang(lang === 'es' ? 'en' : 'es')}
               className="flex items-center gap-2 text-sm font-bold hover:text-primary transition-colors"
             >
               <Globe size={16} />
               {lang.toUpperCase()}
             </button>
-            <a href="#contact" className="btn btn-primary py-2 px-6 text-sm">
-              {lang === 'es' ? 'Contacto' : 'Contact'}
-            </a>
           </div>
         </div>
 
@@ -119,13 +126,16 @@ const Navbar: React.FC<NavbarProps> = ({ lang, setLang }) => {
                   <Globe size={20} />
                   {lang === 'es' ? 'Cambiar a Inglés' : 'Switch to Spanish'}
                 </button>
-                <a
-                  href="#contact"
-                  onClick={() => setIsMobileMenuOpen(false)}
-                  className="btn btn-primary w-full"
+                <button
+                  onClick={() => {
+                    toggleTheme();
+                    setIsMobileMenuOpen(false);
+                  }}
+                  className="flex items-center gap-2 text-lg font-bold"
                 >
-                  {lang === 'es' ? 'Contacto' : 'Contact'}
-                </a>
+                  {isDark ? <Sun size={20} /> : <Moon size={20} />}
+                  {isDark ? (lang === 'es' ? 'Modo Claro' : 'Light Mode') : (lang === 'es' ? 'Modo Oscuro' : 'Dark Mode')}
+                </button>
               </div>
             </ul>
           </motion.div>
