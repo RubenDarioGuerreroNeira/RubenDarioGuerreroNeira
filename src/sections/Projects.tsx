@@ -8,7 +8,7 @@ interface ProjectsProps {
   lang: 'es' | 'en';
 }
 
-const ProjectCard: React.FC<{ project: { id: string; title: { es: string; en: string }; description: { es: string; en: string }; tags: string[]; terminalContent?: { es: { icon: string; text: string }[]; en: { icon: string; text: string }[] }; link?: string; github?: string; isFeatured?: boolean }; lang: 'es' | 'en'; index: number }> = ({ project, lang, index }) => {
+const ProjectCard: React.FC<{ project: { id: string; title: { es: string; en: string }; description: { es: string; en: string }; tags: string[]; icon?: string; terminalContent?: { es: { icon: string; text: string }[]; en: { icon: string; text: string }[] }; link?: string; github?: string; isFeatured?: boolean }; lang: 'es' | 'en'; index: number }> = ({ project, lang, index }) => {
   return (
     <motion.article
       initial={{ opacity: 0, y: 30 }}
