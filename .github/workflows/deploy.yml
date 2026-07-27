@@ -20,8 +20,10 @@ jobs:
           npm install
           npm run build
 
-      - name: Copy Legacy Portfolio Files 📂
-        run: cp -r legacy/. dist/
+      - name: Copy Legacy Portfolio Files 📁
+        run: |
+          mkdir -p dist/legacy
+          cp -r legacy/. dist/legacy/
 
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4
