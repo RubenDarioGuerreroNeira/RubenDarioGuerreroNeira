@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
-import { Github, Linkedin, Send, ChevronDown, Terminal } from 'lucide-react';
+import { Github, ChevronDown } from 'lucide-react';
 import { portfolioData } from '../data/portfolio';
 
 interface HeroProps {
@@ -8,13 +8,13 @@ interface HeroProps {
 }
 
 const Hero: React.FC<HeroProps> = ({ lang }) => {
-  const roles = [
+  const roles = React.useMemo(() => [
     lang === 'es' ? 'Backend Developer' : 'Backend Developer',
-    lang === 'es' ? 'Ingeniero Prompt' : 'Prompt Engineer',
-    lang === 'es' ? 'Desarrollo de Bots con IA' : 'AI Bot Development',
+    lang === 'es' ? 'Arquitecto de Microservicios' : 'Microservices Architect',
+    lang === 'es' ? 'Experto en IA Conversacional' : 'Conversational AI Expert',
     'Open Source Contributor',
     'NestJS Enthusiast'
-  ];
+  ], [lang]);
 
   const [roleIndex, setRoleIndex] = useState(0);
   const [displayText, setDisplayText] = useState('');
@@ -42,31 +42,31 @@ const Hero: React.FC<HeroProps> = ({ lang }) => {
   }, [displayText, isDeleting, roleIndex, roles]);
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center pt-20 overflow-hidden">
+    <section className="relative min-h-screen flex items-center justify-center pt-32 pb-20 overflow-hidden">
       {/* Background blobs */}
-      <div className="absolute top-1/4 -left-20 w-96 h-96 bg-primary/20 rounded-full blur-[120px] animate-pulse" />
-      <div className="absolute bottom-1/4 -right-20 w-96 h-96 bg-accent/20 rounded-full blur-[120px] animate-pulse" />
+      <div className="absolute top-1/4 -left-20 w-96 h-96 bg-primary/10 rounded-full blur-[120px] animate-pulse" />
+      <div className="absolute bottom-1/4 -right-20 w-96 h-96 bg-accent/10 rounded-full blur-[120px] animate-pulse" />
 
-      <div className="container relative z-10">
-        <div className="flex flex-col-reverse md:flex-row items-center justify-between gap-12">
+      <div className="container relative z-10 px-6">
+        <div className="flex flex-col-reverse md:flex-row items-center justify-between gap-16">
           {/* Left content */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5 }}
+            transition={{ duration: 0.6 }}
             className="flex-1 text-center md:text-left"
           >
-            <h2 className="text-xl md:text-2xl text-white/60 mb-2">
-              {lang === 'es' ? 'Hola,' : 'Hello,'}
+            <h2 className="text-4xl md:text-5xl font-light text-white tracking-tight mb-2">
+              {lang === 'es' ? 'Hola.' : 'Hello.'}
             </h2>
-            <h1 className="text-4xl md:text-6xl font-bold mb-4 text-white">
-              {lang === 'es' ? 'Soy' : 'I\'m'} <span className="text-primary">{portfolioData.name}</span>
+            <h1 className="text-5xl md:text-7xl font-black mb-4 text-white tracking-tighter leading-none">
+              {lang === 'es' ? 'Soy' : "I'm"} <span className="text-primary">{portfolioData.name.split(' ')[0]}</span>
             </h1>
             <motion.div
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.4 }}
-              className="text-xl md:text-3xl font-medium text-white/60 mb-8 h-8"
+              className="text-2xl md:text-4xl font-bold text-white/40 mb-10 h-10 tracking-tight"
             >
               {displayText}<span className="text-primary animate-pulse">|</span>
             </motion.div>
@@ -105,16 +105,17 @@ const Hero: React.FC<HeroProps> = ({ lang }) => {
 
           {/* Right image */}
           <motion.div
-            initial={{ opacity: 0, scale: 0.9 }}
+            initial={{ opacity: 0, scale: 0.95 }}
             animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.5 }}
-            className="flex-shrink-0"
+            transition={{ duration: 0.7, ease: "easeOut" }}
+            className="flex-shrink-0 relative group"
           >
-            <div className="w-64 h-80 md:w-80 md:h-96 rounded-3xl border-2 border-white/10 overflow-hidden shadow-2xl shadow-primary/20">
+            <div className="absolute -inset-1 bg-gradient-to-r from-primary to-accent rounded-[2rem] blur opacity-25 group-hover:opacity-50 transition duration-1000 group-hover:duration-200" />
+            <div className="relative w-72 h-80 md:w-[350px] md:h-[450px] rounded-[2rem] border border-white/10 overflow-hidden bg-black/40 backdrop-blur-sm">
               <img
                 src="https://avatars.githubusercontent.com/u/149652185?v=4"
                 alt={portfolioData.name}
-                className="w-full h-full object-cover"
+                className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700 ease-in-out"
               />
             </div>
           </motion.div>

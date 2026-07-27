@@ -24,10 +24,18 @@ const About: React.FC<AboutProps> = ({ lang }) => {
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
                     transition={{ delay: 0.2 }}
-                    className="max-w-3xl mx-auto space-y-8 text-lg md:text-xl leading-relaxed text-white/70"
+                    className="max-w-4xl mx-auto space-y-6"
                 >
                     {portfolioData.about[lang].map((paragraph, i) => (
-                        <p key={i} dangerouslySetInnerHTML={{ __html: paragraph }} />
+                        <motion.p
+                            key={i}
+                            dangerouslySetInnerHTML={{ __html: paragraph }}
+                            className="text-lg md:text-xl leading-relaxed text-white/70 glass-card p-8 md:p-10 text-center md:text-left hover:bg-white/5 transition-all duration-300"
+                            initial={{ opacity: 0, x: i % 2 === 0 ? -20 : 20 }}
+                            whileInView={{ opacity: 1, x: 0 }}
+                            viewport={{ once: true }}
+                            transition={{ delay: 0.3 + i * 0.1 }}
+                        />
                     ))}
                 </motion.div>
             </div>

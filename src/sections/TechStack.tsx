@@ -15,18 +15,25 @@ const TechStack: React.FC = () => {
           Tech <span className="text-primary">Stack</span>
         </motion.h2>
 
-        <div className="flex flex-wrap justify-center gap-3 max-w-5xl mx-auto">
+        <div className="flex flex-wrap justify-center gap-4 max-w-4xl mx-auto">
           {portfolioData.techStack.map((tech, i) => (
-            <motion.span
+            <motion.div
               key={tech.name}
-              initial={{ opacity: 0, scale: 0.8 }}
-              whileInView={{ opacity: 1, scale: 1 }}
+              initial={{ opacity: 0, y: 10 }}
+              whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: i * 0.05 }}
-              className="px-5 py-2.5 rounded-full border border-white/10 bg-white/5 text-sm font-semibold text-white/70 hover:bg-white/10 hover:text-white hover:border-white/20 transition-all duration-300"
+              className="group relative"
             >
-              {tech.name}
-            </motion.span>
+              <div className="absolute -inset-0.5 bg-gradient-to-r from-primary/50 to-accent/50 rounded-full blur opacity-0 group-hover:opacity-100 transition duration-300" />
+              <div className="relative flex items-center gap-3 px-6 py-3 rounded-full border border-white/10 bg-[#0F172A]/80 backdrop-blur-sm text-sm font-bold text-white/80 group-hover:text-white group-hover:border-white/20 transition-all duration-300">
+                <div
+                  className="w-2 h-2 rounded-full"
+                  style={{ backgroundColor: tech.color }}
+                />
+                {tech.name}
+              </div>
+            </motion.div>
           ))}
         </div>
       </div>

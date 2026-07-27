@@ -25,7 +25,7 @@ function App() {
     canvas.width = width;
     canvas.height = height;
 
-    let stars: any[] = [];
+    let stars: { x: number; y: number; radius: number; vx: number; vy: number; alpha: number; twinkleSpeed: number }[] = [];
     const initStars = () => {
       stars = [];
       const starCount = Math.floor((width * height) / 4000);

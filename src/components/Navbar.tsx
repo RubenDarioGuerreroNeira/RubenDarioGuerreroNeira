@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Menu, X, Globe, Sun, Moon } from 'lucide-react';
-import { useTheme } from '../contexts/ThemeContext';
+import { useThemeHook } from '../hooks/useTheme';
 import { cn } from '../utils/cn';
 
 interface NavbarProps {
@@ -12,7 +12,7 @@ interface NavbarProps {
 const Navbar: React.FC<NavbarProps> = ({ lang, setLang }) => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-  const { isDark, toggleTheme } = useTheme();
+  const { isDark, toggleTheme } = useThemeHook();
 
   useEffect(() => {
     const handleScroll = () => {

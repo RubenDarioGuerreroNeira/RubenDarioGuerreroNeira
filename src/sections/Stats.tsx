@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Code2, Users, Briefcase } from 'lucide-react';
+import { Database, Zap, Briefcase } from 'lucide-react';
 
 interface StatsProps {
     lang: 'es' | 'en';
@@ -9,24 +9,24 @@ interface StatsProps {
 const Stats: React.FC<StatsProps> = ({ lang }) => {
     const stats = [
         {
-            icon: <Code2 size={24} />,
+            icon: <Database size={32} />,
             value: '120+',
             label: lang === 'es' ? 'Consultas SQL Optimizadas' : 'SQL Queries Optimized',
         },
         {
-            icon: <Users size={24} />,
+            icon: <Zap size={32} />,
             value: '95%',
             label: lang === 'es' ? 'Reducción Queries N+1' : 'N+1 Queries Reduction',
         },
         {
-            icon: <Briefcase size={24} />,
+            icon: <Briefcase size={32} />,
             value: '10+',
             label: lang === 'es' ? 'Proyectos Backend' : 'Backend Projects',
         },
     ];
 
     return (
-        <section className="py-16 border-y border-white/5 bg-white/[0.02]">
+        <section className="py-24 border-y border-white/5 bg-[#0F172A]/50 backdrop-blur-md">
             <div className="container px-6 mx-auto">
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
                     {stats.map((stat, i) => (
