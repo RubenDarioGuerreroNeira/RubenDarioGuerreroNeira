@@ -1,451 +1,66 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/RubenDarioGuerreroNeira/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- SEO Meta Tags -->
     <title>Rubén D. Guerrero N. | Backend Developer</title>
-    <meta name="description"
-        content="Portafolio de Rubén D. Guerrero N., Desarrollador Backend especializado en NestJS, Microservicios y Clean Architecture.">
-    <meta name="keywords"
-        content="Backend Developer, NestJS, Node.js, TypeScript, Open Source, Vendure, n8n, Mistral AI, PostgreSQL, Web Scraping, Puppeteer, IA Generativa, Chatbots, SQL Optimization, Benchmarking">
-    <meta name="author" content="Rubén D. Guerrero N.">
-    <meta name="robots" content="index, follow">
-    <meta name="theme-color" content="#0077b6">
+    <meta
+      name="description"
+      content="Desarrollador Backend especializado en arquitecturas escalables, NestJS, TypeScript, PostgreSQL, optimización de consultas SQL e integración de Inteligencia Artificial."
+    />
+    <meta
+      name="keywords"
+      content="Backend Developer, NestJS, TypeScript, PostgreSQL, Node.js, Vendure, SQL Optimization, AI Integration, Web Development, Rubén Darío Guerrero Neira"
+    />
+    <meta name="author" content="Rubén Darío Guerrero Neira" />
+    <meta name="robots" content="index, follow" />
 
-    <!-- Open Graph / Facebook / LinkedIn -->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://rubendarioguerreroneira.github.io/RubenDarioGuerreroNeira/">
-    <meta property="og:title" content="Rubén D. Guerrero N. | Backend Developer">
-    <meta property="og:description"
-        content="Especialista en NestJS y Arquitectura de Software. Mira mis proyectos y contribuciones.">
-    <meta property="og:image"
-        content="https://rubendarioguerreroneira.github.io/RubenDarioGuerreroNeira/github-header-banner.png">
-    <meta property="og:site_name" content="Rubén D. Guerrero N. Portfolio">
-    <meta property="og:locale" content="es_ES">
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:url"
+      content="https://rubendarioguerreroneira.github.io/"
+    />
+    <meta
+      property="og:title"
+      content="Rubén D. Guerrero N. | Backend Developer"
+    />
+    <meta
+      property="og:description"
+      content="Desarrollador Backend especializado en arquitecturas escalables, NestJS, TypeScript, PostgreSQL, optimización de consultas SQL e integración de Inteligencia Artificial. Core Contributor de Vendure."
+    />
+    <meta property="og:image" content="/RubenDarioGuerreroNeira/og-image.png" />
 
-    <!-- Canonical URL -->
-    <link rel="canonical" href="https://rubendarioguerreroneira.github.io/RubenDarioGuerreroNeira/" />
+    <!-- Twitter / X -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta
+      property="twitter:url"
+      content="https://rubendarioguerreroneira.github.io/"
+    />
+    <meta
+      property="twitter:title"
+      content="Rubén D. Guerrero N. | Backend Developer"
+    />
+    <meta
+      property="twitter:description"
+      content="Desarrollador Backend especializado en arquitecturas escalables, NestJS, TypeScript, PostgreSQL, optimización de consultas SQL e integración de Inteligencia Artificial. Core Contributor de Vendure."
+    />
+    <meta property="twitter:image" content="/og-image.png" />
 
     <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;700;900&display=swap" rel="stylesheet">
-    <!-- Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <!-- Styles -->
-    <link rel="stylesheet" href="css/style.css">
-    <!-- JSON-LD Structured Data -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Person",
-      "name": "Rubén D. Guerrero N.",
-      "jobTitle": "Backend Developer",
-      "url": "https://rubendarioguerreroneira.github.io/RubenDarioGuerreroNeira/",
-      "sameAs": [
-        "https://github.com/RubenDarioGuerreroNeira",
-        "https://www.linkedin.com/in/ruben-d-guerrero-n-9276bb195/"
-      ],
-      "knowsAbout": ["NestJS", "TypeScript", "Microservices", "Clean Architecture", "Backend Development", "PostgreSQL", "MongoDB", "Web Scraping", "Puppeteer", "CI/CD", "Git", "AI"]
-    }
-    </script>
-</head>
-
-<body>
-    <!-- Background Animation -->
-    <canvas id="bg-canvas"></canvas>
-
-    <!-- Overlay for better readability -->
-    <div class="overlay"></div>
-
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="container nav-container">
-            <a href="#" class="logo">RDGN<span class="dot">.</span></a>
-            <button class="mobile-menu-btn" aria-label="Menu">
-                <i class="fas fa-bars"></i>
-            </button>
-            <ul class="nav-links">
-                <li><a href="#about" class="nav-link">Sobre mí</a></li>
-                <li><a href="#experience" class="nav-link">Experiencia</a></li>
-                <li><a href="#tech-stack" class="nav-link">Stack</a></li>
-                <li><a href="#projects" class="nav-link">Proyectos</a></li>
-                <li class="lang-selector">
-                    <a href="./index.html" class="lang-link active">ES</a>
-                    <span class="lang-separator">|</span>
-                    <a href="./index-en.html" class="lang-link">EN</a>
-                </li>
-                <li><a href="#contact" class="nav-link btn-featured">Contacto</a></li>
-            </ul>
-        </div>
-    </nav>
-
-    <!-- Hero Section -->
-    <header class="hero">
-        <div class="container hero-container">
-            <div class="hero-content">
-                <div class="avatar-wrapper">
-                    <img src="https://avatars.githubusercontent.com/u/149652185?v=4" alt="Rubén D. Guerrero N."
-                        class="avatar">
-                    <div class="status-badge"><i class="fas fa-code"></i></div>
-                </div>
-                <h1 class="glitch-text" data-text="Rubén D. Guerrero N.">Rubén D. Guerrero N.</h1>
-                <h2 class="typing-container">
-                    <span id="typing-text"></span><span class="cursor">|</span>
-                </h2>
-                <div class="hero-buttons">
-                    <a href="#projects" class="btn btn-primary"><i class="fas fa-eye"></i> Ver Proyectos</a>
-                    <a href="https://github.com/RubenDarioGuerreroNeira" target="_blank" class="btn btn-secondary"><i
-                            class="fab fa-github"></i> GitHub</a>
-                </div>
-                <div class="social-links-hero">
-                    <a href="https://www.linkedin.com/in/ruben-d-guerrero-n-9276bb195/" target="_blank"
-                        aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                    <a href="mailto:rudargeneira@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
-                    <a href="https://t.me/Rubedev" target="_blank" aria-label="Telegram"><i
-                            class="fab fa-telegram-plane"></i></a>
-                </div>
-            </div>
-        </div>
-        <div class="scroll-down">
-            <span>Scroll</span>
-            <i class="fas fa-chevron-down"></i>
-        </div>
-    </header>
-
-    <main>
-        <!-- About Section -->
-        <section id="about" class="section">
-            <div class="container">
-                <h2 class="section-title">Sobre <span class="highlight">Mí</span></h2>
-                <div class="about-content glass-card fade-in">
-                    <p class="about-text">
-                        Soy un desarrollador backend apasionado por la <span class="accent">arquitectura escalable</span>, los
-                        <span class="accent">sistemas distribuidos</span> y la <span class="accent">Clean Architecture</span>.
-                        Mi filosofía se basa en que escribir código es el medio, pero construir sistemas mantenibles y resilientes es el verdadero arte.
-                    </p>
-                    <p class="about-text">
-                        Como <span class="accent">Core Contributor en Vendure</span> (el framework de e-commerce #1 en NestJS), mis contribuciones impactan a una comunidad global de más de <span class="accent">10,000 desarrolladores</span>. Me especializo en resolver problemas complejos de rendimiento, optimización de consultas SQL y diseño de APIs de alto tráfico.
-                    </p>
-                    <p class="about-text">
-                        Mi enfoque combina la solidez del backend tradicional con la innovación de la <span class="accent">IA Generativa</span>, donde aplico ingeniería de prompts avanzada para integrar modelos de lenguaje en procesos empresariales críticos.
-                    </p>
-                </div>
-            </div>
-        </section>
-
-        <!-- Experience / OSS Section -->
-        <section id="experience" class="section">
-            <div class="container">
-                <h2 class="section-title">Open Source & <span class="highlight">Experiencia</span></h2>
-                <div class="timeline">
-                    <!-- Vendure Item -->
-                    <div class="timeline-item fade-in-left">
-                        <div class="timeline-dot"></div>
-                        <div class="timeline-date">Actualidad</div>
-                        <div class="timeline-content glass-card">
-                            <h3><i class="fas fa-code-branch"></i> Vendure Core Contributor</h3>
-                            <p>Optimización de sistemas de alto tráfico y arquitectura de servicios en NestJS.</p>
-                            <ul class="contributions-list">
-                                <li><strong>SQL:</strong> Eliminación de N+1 queries mediante <em>In operator batch loading</em> (Issue #4387).</li>
-                                <li><strong>Arquitectura:</strong> Diseño del método <code>getProductVariantsForCollections</code> para transacciones eficientes.</li>
-                                <li><strong>DevOps:</strong> Resolución de conflictos en monorepo (20+ archivos) y estandarización de dependencias.</li>
-                                <li><strong>Tooling:</strong> Modernización de scripts de automatización interna para entornos Windows.</li>
-                                <li class="pr-link"><a href="https://github.com/vendure-ecommerce/vendure/pull/3745" target="_blank">View more PRs on GitHub</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Tech Stack -->
-        <section id="tech-stack" class="section">
-            <div class="container">
-                <h2 class="section-title">Tech <span class="highlight">Stack</span></h2>
-                <div class="tech-grid">
-                    <!-- Cards for technologies -->
-                    <div class="tech-card fade-in-up" style="--delay: 0s">
-                        <i class="fab fa-js" style="color: #F7DF1E;"></i>
-                        <span>JavaScript</span>
-                    </div>
-                    <div class="tech-card fade-in-up" style="--delay: 0.1s">
-                        <i class="fab fa-node-js" style="color: #6DA55F;"></i>
-                        <span>Node.js</span>
-                    </div>
-                    <div class="tech-card fade-in-up" style="--delay: 0.2s">
-                        <i class="fas fa-shield-alt" style="color: #3178C6;"></i>
-                        <span>TypeScript</span>
-                    </div>
-                    <div class="tech-card fade-in-up" style="--delay: 0.3s">
-                        <i class="fas fa-layer-group" style="color: #E0234E;"></i>
-                        <span>NestJS</span>
-                    </div>
-                    <div class="tech-card fade-in-up" style="--delay: 0.4s">
-                        <i class="fas fa-database" style="color: #316192;"></i>
-                        <span>PostgreSQL</span>
-                    </div>
-                    <div class="tech-card fade-in-up" style="--delay: 0.5s">
-                        <i class="fas fa-brain" style="color: #00A67E;"></i>
-                        <span>IA / LLMs</span>
-                    </div>
-                    <div class="tech-card fade-in-up" style="--delay: 0.6s">
-                        <img src="https://cdn.simpleicons.org/n8n/%23FF6C37" alt="n8n" style="width: 40px; height: 40px; margin-bottom: 10px;">
-                        <span>n8n / Low-Code</span>
-                    </div>
-                    <div class="tech-card fade-in-up" style="--delay: 0.7s">
-                        <i class="fab fa-docker" style="color: #2496ED;"></i>
-                        <span>Docker</span>
-                    </div>
-                    <div class="tech-card fade-in-up" style="--delay: 0.8s">
-                        <i class="fab fa-git-alt" style="color: #F05033;"></i>
-                        <span>Git</span>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Projects Section -->
-        <section id="projects" class="section">
-            <div class="container">
-                <h2 class="section-title">Proyectos <span class="highlight">Destacados</span></h2>
-                <div class="projects-grid">
-                    <!-- Project Salud IA Bot - NUEVO -->
-                    <article class="project-card glass-card fade-in-up" style="border-top: 2px solid #3fb950;">
-                        <div class="project-content">
-                            <div class="project-header">
-                                <i class="fas fa-heartbeat project-icon" style="color: #3fb950;"></i>
-                                <h3>🏥 Salud IA Bot - Colombia <span style="font-size:0.75em; background:#3fb950; color:#000; padding:2px 8px; border-radius:4px; margin-left:8px;">En Desarrollo</span></h3>
-                            </div>
-                            <p>Bot de salud pública en <strong>Telegram</strong> que democratiza el acceso a información sanitaria en Colombia. Usa <strong>Meta LLaMA 3.1 70B</strong> vía OpenRouter con arquitectura RAG para responder sobre SIVIGILA, vacunación, salud mental CIE-10 y salud sexual. Genera gráficos dinámicos y localiza centros de salud por geolocalización.
-                                <br><br>
-                                <div class="terminal-block">
-                                    <div class="terminal-header">
-                                        <div class="terminal-dot dot-red"></div>
-                                        <div class="terminal-dot dot-yellow"></div>
-                                        <div class="terminal-dot dot-green"></div>
-                                    </div>
-                                    <ul class="terminal-body">
-                                        <li><i class="fas fa-brain" style="color: #ffbd2e;"></i> <span><strong>IA + RAG:</strong> LLaMA 3.1 70B vía OpenRouter con contexto real de SIVIGILA y datos epidemiológicos.</span></li>
-                                        <li><i class="fas fa-chart-bar" style="color: #ffbd2e;"></i> <span><strong>Visualización Dinámica:</strong> Generación de gráficos (barras, tortas, líneas) vía <em>QuickChart</em>.</span></li>
-                                        <li><i class="fas fa-map-marker-alt" style="color: #58a6ff;"></i> <span><strong>Geolocalización:</strong> Búsqueda de centros de salud en Antioquia, Boyacá, Yopal y Cali.</span></li>
-                                        <li><i class="fas fa-shield-alt" style="color: #3fb950;"></i> <span><strong>Módulos Especializados:</strong> Salud sexual, mental CIE-10, análisis epidemiológico y ML predictivo.</span></li>
-                                    </ul>
-                                </div>
-                            </p>
-                            <div class="tags">
-                                <span class="tag">NestJS</span>
-                                <span class="tag">Meta LLaMA 3.1</span>
-                                <span class="tag">OpenRouter</span>
-                                <span class="tag">RAG</span>
-                                <span class="tag">Telegram API</span>
-                                <span class="tag">QuickChart</span>
-                                <span class="tag">TypeScript</span>
-                            </div>
-                            <div style="margin-top: 1rem;">
-                                <a href="https://github.com/RubenDarioGuerreroNeira/Ecosistema-IA-Colombia" target="_blank" class="btn btn-secondary" style="font-size:0.85em; padding: 0.5rem 1.2rem;">
-                                    <i class="fab fa-github"></i> Ver Repositorio
-                                </a>
-                            </div>
-                        </div>
-                    </article>
-
-                    <!-- Project Vendure (Featured) -->
-                    <article class="project-card glass-card fade-in-up">
-                        <div class="project-content">
-                            <div class="project-header">
-                                <i class="fas fa-shopping-bag project-icon"></i>
-                                <h3>Contribución al Core de Vendure (Open Source/Fork)</h3>
-                            </div>
-                            <p>Optimicé el rendimiento del núcleo mediante el diseño de arquitecturas de carga masiva y la resolución de cuellos de botella críticos en el filtrado de datos.
-                                <br><br>
-                                <div class="terminal-block">
-                                    <div class="terminal-header">
-                                        <div class="terminal-dot dot-red"></div>
-                                        <div class="terminal-dot dot-yellow"></div>
-                                        <div class="terminal-dot dot-green"></div>
-                                    </div>
-                                    <ul class="terminal-body">
-                                        <li><i class="fas fa-database" style="color: #ffbd2e;"></i> <span><strong>SQL Optimization:</strong> Eliminación de N+1 queries (Issue #4387) mediante <em>batch loading</em> con TypeORM In operator.</span></li>
-                                        <li><i class="fas fa-search-plus" style="color: #ffbd2e;"></i> <span><strong>Optimización Catálogo (N+1):</strong> Reducción de overhead mediante subconsultas <code>EXISTS</code> para omitir JOINs innecesarios en relaciones Many-to-One.</span></li>
-                                        <li><i class="fas fa-project-diagram" style="color: #58a6ff;"></i> <span><strong>Arquitectura:</strong> Implementación de <code>getProductVariantsForCollections</code> para transacciones atómicas eficientes.</span></li>
-                                        <li><i class="fas fa-plug" style="color: #58a6ff;"></i> <span><strong>DI System:</strong> Refactorización de <code>Injector</code> y <code>ConfigModule</code> para manejo seguro de <code>ModuleRef</code> y validaciones descriptivas en el bootstrap.</span></li>
-                                        <li><i class="fas fa-tools" style="color: #3fb950;"></i> <span><strong>DevOps/Tooling:</strong> Sincronización de monorepo (20+ archivos) y modernización de scripts Node.js para Windows.</span></li>
-                                        <li><i class="fas fa-user-shield" style="color: #3fb950;"></i> <span><strong>Seguridad de Tipos:</strong> Eliminación de <code>as any</code> por tipado estricto y <em>optional chaining</em> en el módulo de pagos Braintree.</span></li>
-                                    </ul>
-                                </div>
-                                <br>
-                                Resolviendo problemas complejos en el corazón del e-commerce moderno. 📉⚡
-                            </p>
-                            <div class="tags">
-                                <span class="tag">TypeORM</span>
-                                <span class="tag">SQL Optimization</span>
-                                <span class="tag">Monorepo (Lerna)</span>
-                                <span class="tag">Node.js Modernization</span>
-                            </div>
-                        </div>
-                    </article>
-
-                    <!-- Project CCSC Bot -->
-                    <article class="project-card glass-card fade-in-up">
-                        <div class="project-content">
-                            <div class="project-header">
-                                <i class="fas fa-hospital-alt project-icon"></i>
-                                <h3>CCSC Bot - Centro Clínico Madrid</h3>
-                            </div>
-                            <p>Asistente virtual inteligente para el Centro Clínico Madrid. Centraliza información de 43 especialistas en 35 especialidades mediante una interfaz conversacional en Telegram.
-                                <br><br>
-                                <strong>Innovación:</strong> Implementé búsqueda <em>fuzzy</em> para nombres/especialidades y un sistema de <strong>fallback resiliente</strong> con Mistral AI para consultas en lenguaje natural fuera de la base de datos local.
-                            </p>
-                            <div class="tags">
-                                <span class="tag">n8n</span>
-                                <span class="tag">Mistral AI</span>
-                                <span class="tag">Web Scraping</span>
-                                <span class="tag">Telegram API</span>
-                            </div>
-                        </div>
-                    </article>
-
-                    <!-- Project Sustainable Credits -->
-                    <article class="project-card glass-card fade-in-up">
-                        <div class="project-content">
-                            <div class="project-header">
-                                <i class="fas fa-globe-americas project-icon"></i>
-                                <h3>Sustainable Credits Indexer</h3>
-                            </div>
-                            <p>Servicio de backend de alto rendimiento que indexa <strong>más de 1 millón de eventos off-chain</strong> de contratos ERC-1155 (RWA). Reduce el tiempo de acceso a datos en un 95% mediante una API RESTful optimizada y persistencia atómica.</p>
-                            <div class="tags">
-                                <span class="tag">NestJS</span>
-                                <span class="tag">PostgreSQL</span>
-                                <span class="tag">Blockchain</span>
-                            </div>
-                        </div>
-                    </article>
-
-                    <!-- Project 2 -->
-                    <article class="project-card glass-card fade-in-up">
-                        <div class="project-content">
-                            <div class="project-header">
-                                <i class="fas fa-robot project-icon"></i>
-                                <h3>Bot Taurino con IA</h3>
-                            </div>
-                            <p>Chatbot con IA (Gemini API) y NestJS. Como <strong>Ingeniero Prompt</strong>, logré que el bot procese un 85% de las consultas en lenguaje natural, informando sobre festejos taurinos con web scraping automatizado (Puppeteer/Cheerio).</p>
-                            <div class="tags">
-                                <span class="tag">NestJS</span>
-                                <span class="tag">Gemini AI</span>
-                                <span class="tag">Scraping</span>
-                            </div>
-                        </div>
-                    </article>
-
-                    <!-- Project 3 -->
-                    <article class="project-card glass-card fade-in-up">
-                        <div class="project-content">
-                            <div class="project-header">
-                                <i class="fas fa-hospital-user project-icon"></i>
-                                <h3>Medical Appointments API</h3>
-                            </div>
-                            <p>API robusta para gestión de clínicas, manejando <strong>3000+ citas mensuales</strong>. Implementa roles granulares, historial médico en JSONB y subida de recetas a la nube con altos estándares de seguridad.</p>
-                            <div class="tags">
-                                <span class="tag">NestJS</span>
-                                <span class="tag">TypeORM</span>
-                                <span class="tag">Security</span>
-                            </div>
-                        </div>
-                    </article>
-
-                    <!-- Project Bowling -->
-                    <article class="project-card glass-card fade-in-up">
-                        <div class="project-content">
-                            <div class="project-header">
-                                <i class="fas fa-bowling-ball project-icon"></i>
-                                <h3>Bowling Tournament Management</h3>
-                            </div>
-                            <p>Plataforma para gestión de torneos de bolos con generación automática de brackets y seguimiento de puntuaciones en tiempo real para ligas competitivas.</p>
-                            <div class="tags">
-                                <span class="tag">NestJS</span>
-                                <span class="tag">PostgreSQL</span>
-                                <span class="tag">Logic</span>
-                            </div>
-                        </div>
-                    </article>
-
-                    <!-- Project Shopping Cart -->
-                    <article class="project-card glass-card fade-in-up">
-                        <div class="project-content">
-                            <div class="project-header">
-                                <i class="fas fa-shopping-cart project-icon"></i>
-                                <h3>Shopping Cart System</h3>
-                            </div>
-                            <p>Motor de e-commerce enfocado en la integridad transaccional de carritos, gestión de inventario concurrente y flujos de pedidos escalables.</p>
-                            <div class="tags">
-                                <span class="tag">Node.js</span>
-                                <span class="tag">NestJS</span>
-                                <span class="tag">PostgreSQL</span>
-                            </div>
-                        </div>
-                    </article>
-
-                    <!-- Project Amusement Park -->
-                    <article class="project-card glass-card fade-in-up">
-                        <div class="project-content">
-                            <div class="project-header">
-                                <i class="fas fa-ticket-alt project-icon"></i>
-                                <h3>Amusement Park API</h3>
-                            </div>
-                            <p>API RESTful para la administración de parques temáticos, gestionando venta de tickets, acceso a atracciones y roles de personal administrativo.</p>
-                            <div class="tags">
-                                <span class="tag">NestJS</span>
-                                <span class="tag">TypeORM</span>
-                                <span class="tag">Architecture</span>
-                            </div>
-                        </div>
-                    </article>
-
-                    <!-- Project 4 -->
-                    <article class="project-card glass-card fade-in-up">
-                        <div class="project-content">
-                            <div class="project-header">
-                                <i class="fab fa-telegram project-icon"></i>
-                                <h3>Medical AI Bot (@CitasMedicbot)</h3>
-                            </div>
-                            <p>Interfaz conversacional para pacientes. Gestiona citas, localiza farmacias vía GPS y genera <strong>QRs de emergencia</strong> con datos vitales para primeros auxilios.</p>
-                            <div class="tags">
-                                <span class="tag">Telegram API</span>
-                                <span class="tag">Generative AI</span>
-                                <span class="tag">Geo & QR</span>
-                            </div>
-                        </div>
-                    </article>
-                </div>
-            </div>
-        </section>
-
-        <!-- Contact Section -->
-        <section id="contact" class="section">
-            <div class="container contact-container glass-card fade-in">
-                <h2 class="section-title">¿Hablamos?</h2>
-                <p>Siempre estoy abierto a discutir nuevos proyectos, ideas creativas o oportunidades para ser parte de
-                    tus visiones.</p>
-                <div class="contact-actions">
-                    <a href="mailto:rudargeneira@gmail.com" class="btn btn-primary big-btn"><i
-                            class="fas fa-envelope"></i> Envíame un correo</a>
-                    <a href="https://www.linkedin.com/in/ruben-d-guerrero-n-9276bb195/" target="_blank"
-                        class="btn btn-secondary big-btn"><i class="fab fa-linkedin"></i> LinkedIn</a>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <footer class="footer">
-        <div class="container">
-            <p>&copy; 2026 Rubén D. Guerrero N. <br> <span class="footer-note">Built with <i class="fas fa-heart"></i> &
-                    NestJS passion.</span></p>
-        </div>
-    </footer>
-
-    <script src="js/script.js"></script>
-</body>
-
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <script type="module" crossorigin src="/RubenDarioGuerreroNeira/assets/index-DPG1K1_m.js"></script>
+    <link rel="stylesheet" crossorigin href="/RubenDarioGuerreroNeira/assets/index-DPhniddx.css">
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
 </html>
